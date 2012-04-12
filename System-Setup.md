@@ -19,25 +19,25 @@ This page is a guide on setting-up an Ubuntu system for AvxSynth development.
     * set env LD_PRELOAD /lib/x86_64-linux-gnu/libpthread.so.0 (for 32-bit Ubuntu)
     * set env LD_PRELOAD /lib/i386-linux-gnu/libpthread.so.0 This is a fix for the debugger hanging on dlopen)
 
-###LibAV
+##LibAV
     1. Get source code of Libav 0.7.4 (http://libav.org/releases/libav-0.7.4.tar.xz)
     1. Compile and install
       * ./configure --enable-gpl --enable-nonfree --enable-version3 --enable-shared
       * make
       * sudo checkinstall --pkgname=ffmpeg --pkgversion="0.7.4" --backup=no --deldoc=yes --fstrans=no --default
 
-###FFMPEG Source
+##FFMPEG Source
     1. Get source code of FFMS-2.17 (http://code.google.com/p/ffmpegsource/downloads/list?can=1&q=&colspec=Filename+Summary+Uploaded+ReleaseDate+Size+DownloadCount)
     1. Compile and install
       * ./configure --enable-shared
       * make
       * sudo checkinstall --pkgname=ffms2 --pkgversion="2.17" --backup=no --deldoc=yes --fstrans=no --default
 
-###Setup AvxSynth Source
+##Setup AvxSynth Source
   1. Setup source folder with AvxSynth source code (avx_root)
   1. Create a directory $HOME$/.AVXSynth/plugins/
   1. To build using master Makefile from console, goto avx_root, and enter 'make' or 'make clean' followed by 'make'.  This will build in the proper order.
-###KDev Setup
+##KDev Setup
   1. In KDevelop, Project-> Open/Import Project the following Makefiles
     * avx_root/avxcommon/Makefile
     * avx_root/avxsynth/core/Makefile
@@ -54,7 +54,7 @@ This page is a guide on setting-up an Ubuntu system for AvxSynth development.
   1. Right click the frameserverapp project, Open Configuration -> Default make target -> set to "rebuild"
   1. Right click the AVXEdit project, Open Configuration -> Default make target -> set to "rebuild"
 
-###Build AvxSynth
+##Build AvxSynth
   1. For each of the projects, right-click and build.  Must build in this order:
     * avxcommon
     * builtinfunctions 
