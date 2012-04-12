@@ -18,16 +18,17 @@ This page is a guide on setting-up an Ubuntu system for AvxSynth development.
   1. *KDev:*
     * Install using Ubuntu Software Center
     * Create a .gdbinit in your home directory containing this text (This is a fix for the debugger hanging on dlopen): 
-        * (for 64-bit Ubuntu) set env LD_PRELOAD /lib/x86_64-linux-gnu/libpthread.so.0 
-        * (for 32-bit Ubuntu) set env LD_PRELOAD /lib/i386-linux-gnu/libpthread.so.0 
+        * (for 64-bit Ubuntu) `set env LD_PRELOAD /lib/x86_64-linux-gnu/libpthread.so.0` 
+        * (for 32-bit Ubuntu) `set env LD_PRELOAD /lib/i386-linux-gnu/libpthread.so.0` 
 
 
 ##LibAV
  1. Get source code of Libav 0.7.4 (http://libav.org/releases/libav-0.7.4.tar.xz)
  1. Compile and install
-  * ./configure --enable-gpl --enable-nonfree --enable-version3 --enable-shared
-  * make
-  * sudo checkinstall --pkgname=ffmpeg --pkgversion="0.7.4" --backup=no --deldoc=yes --fstrans=no --default
+
+    ./configure --enable-gpl --enable-nonfree --enable-version3 --enable-shared
+    make
+    sudo checkinstall --pkgname=ffmpeg --pkgversion="0.7.4" --backup=no --deldoc=yes --fstrans=no --default
 
 ##FFMPEG Source
  1. Get source code of FFMS-2.17 (http://code.google.com/p/ffmpegsource/downloads/list?can=1&q=&colspec=Filename+Summary+Uploaded+ReleaseDate+Size+DownloadCount)
