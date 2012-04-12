@@ -21,3 +21,14 @@ Watch
 
 Click Here to see a short video of AvxSynth in action. Or watch in low-res below. This video demonstrates the ffmpeg source, ffmpeg scaling, ShowSMPTE, and AvxSubtitle, a new filter that does caption burn-in.
 
+## Error Handling
+
+The AvxSynth error handling model is discussed here.
+
+## Discuss
+
+Doom9 discussion is here
+
+## Contribute
+
+If you would like to contribute to AvxSynth, we have need for developers, testers, and build-install experts. More information can be found here. 
