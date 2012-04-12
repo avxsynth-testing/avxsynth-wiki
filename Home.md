@@ -17,9 +17,6 @@ You can see the status of the built-in function porting here.
 ## The AvxSynth Frame Server
 
 The AvxSynth toolkit includes a frame server application that delivers decoded frames through stdout. This can be piped to X264. You can see how to use AvxSynth with X.264 here.
-Watch
-
-Click Here to see a short video of AvxSynth in action. Or watch in low-res below. This video demonstrates the ffmpeg source, ffmpeg scaling, ShowSMPTE, and AvxSubtitle, a new filter that does caption burn-in.
 
 ## Error Handling
 
@@ -32,3 +29,7 @@ Doom9 discussion is here
 ## Contribute
 
 If you would like to contribute to AvxSynth, we have need for developers, testers, and build-install experts. More information can be found here. 
+
+## Watch
+
+Click Here to see a short video of AvxSynth in action. Or watch in low-res below. This video demonstrates the ffmpeg source, ffmpeg scaling, ShowSMPTE, and AvxSubtitle, a new filter that does caption burn-in.
