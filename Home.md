@@ -34,4 +34,3 @@ If you would like to contribute to AvxSynth, we have need for developers, tester
 
 Click Here to see a short video of AvxSynth in action. Or watch in low-res below. This video demonstrates the ffmpeg source, ffmpeg scaling, ShowSMPTE, and AvxSubtitle, a new filter that does caption burn-in.
 
-<object width="640" height="360"><param name="movie" value="http://www.youtube.com/v/DdaQeMcE0UM&rel=0&hl=en_US&feature=player_embedded&version=3"></param><param name="allowFullScreen" value="true"></param><param name="allowScriptAccess" value="always"></param><embed src="http://www.youtube.com/v/DdaQeMcE0UM&rel=0&hl=en_US&feature=player_embedded&version=3" type="application/x-shockwave-flash" allowfullscreen="true" allowScriptAccess="always" width="640" height="360"></embed></object>
