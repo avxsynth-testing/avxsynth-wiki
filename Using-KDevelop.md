@@ -3,13 +3,10 @@ Kdevelop can be used as an IDE to build and debug AvxSynth.
 ##Install KDevelop
   1. Install Kdevelop using Ubuntu Software Center
 
-  1. Create a .gdbinit in your home directory containing this text (This is a fix for the debugger hanging on dlopen): 
-        * (for 64-bit Ubuntu) 
-
+  1. Create a .gdbinit file in your home directory containing the following text.  This is a fix for the debugger hanging on dlopen.
+   * for 64-bit Ubuntu 
           set env LD_PRELOAD /lib/x86_64-linux-gnu/libpthread.so.0
-
-        * (for 32-bit Ubuntu) 
-
+   * (for 32-bit Ubuntu) 
           set env LD_PRELOAD /lib/i386-linux-gnu/libpthread.so.0
 
 ## Import and build AvxSynth
