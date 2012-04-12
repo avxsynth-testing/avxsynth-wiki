@@ -6,31 +6,32 @@ The AvxSynth port was based on the AviSynth 2.5.8 code base, and we are calling 
 
 ## Getting Started
 
-To build and run AvxSynth, follow these instructions
+To build and run AvxSynth, follow [these](https://github.com/avxsynth/avxsynth/wiki/System-Setup) instructions.
 
 ## Porting Discussion
 
-You can read about the porting effort here.
+You can read about the porting effort [here](https://github.com/avxsynth/avxsynth/wiki/Porting-Discussion).
 
 You can see the status of the built-in function porting here. 
 
 ## The AvxSynth Frame Server
 
-The AvxSynth toolkit includes a frame server application that delivers decoded frames through stdout. This can be piped to X264. You can see how to use AvxSynth with X.264 here.
-
-## Error Handling
-
-The AvxSynth error handling model is discussed here.
-
-## Discuss
-
-Doom9 discussion is here
-
-## Contribute
-
-If you would like to contribute to AvxSynth, we have need for developers, testers, and build-install experts. More information can be found here. 
+The AvxSynth toolkit includes a frame server application that delivers decoded frames through stdout. This can be piped to x264. You can see how to use AvxSynth with x264 [here](https://github.com/avxsynth/avxsynth/wiki/AvxSynth-Frame-Server).
 
 ## Watch
 
-Click Here to see a short video of AvxSynth in action. Or watch in low-res below. This video demonstrates the ffmpeg source, ffmpeg scaling, ShowSMPTE, and AvxSubtitle, a new filter that does caption burn-in.
+Click [here](http://www.youtube.com/watch?v=DdaQeMcE0UM&context=C49774bdADvjVQa1PpcFPjEU87afkCgg4WN_KrxYQ2lYo_e_FWKPI=) to see a short video of AvxSynth in action. Or watch in low-res below. This video demonstrates the ffmpeg source, ffmpeg scaling, ShowSMPTE, and AvxSubtitle, a new filter that does caption burn-in.
+
+## Error Handling
+
+The AvxSynth error handling model is discussed [here](https://github.com/avxsynth/avxsynth/wiki/Error-Handling).
+
+## Discuss
+
+Doom9 discussion is [here](http://forum.doom9.org/showthread.php?t=164386).
+
+## Contribute
+
+If you would like to contribute to AvxSynth, we have need for developers, testers, and build-install experts. More information can be found [here](https://github.com/avxsynth/avxsynth/wiki/Want-to-Help%3F). 
+
 
