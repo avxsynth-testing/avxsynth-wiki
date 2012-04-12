@@ -6,19 +6,21 @@ This page is a guide on setting-up an Ubuntu system for AvxSynth development.
 
 ##Setup Development Environment
 
-  1. *Build Tools:* 
-`sudo apt-get install build-essential checkinstall git yasm`
-  1. *MPlayer:* sudo apt-get install  mplayer
-  1. *Log4CPP:* sudo apt-get install liblog4cpp5-dev liblog4cpp5
-  1. *Cairo:* sudo apt-get install libcairo2-dev
-  1. *Pango:* sudo apt-get install libpango1.0-dev
-  1. *LibJPEG:* sudo apt-get install libjpeg-dev
-  1. *QT:* sudo apt-get -y install libqt4-dev libqt4-designer libqt4-gui
+  1. *Build Tools:*  `sudo apt-get install build-essential checkinstall git yasm`
+
+  1. *MPlayer:* `sudo apt-get install  mplayer`
+
+  1. *Log4CPP:* `sudo apt-get install liblog4cpp5-dev liblog4cpp5`
+  1. *Cairo:* `sudo apt-get install libcairo2-dev`
+  1. *Pango:* `sudo apt-get install libpango1.0-dev`
+  1. *LibJPEG:* `sudo apt-get install libjpeg-dev`
+  1. *QT:* `sudo apt-get -y install libqt4-dev libqt4-designer libqt4-gui`
   1. *KDev:*
     * Install using Ubuntu Software Center
-    * Create a .gdbinit in your home directory containing this text: (for 64-bit Ubuntu)
-    * set env LD_PRELOAD /lib/x86_64-linux-gnu/libpthread.so.0 (for 32-bit Ubuntu)
-    * set env LD_PRELOAD /lib/i386-linux-gnu/libpthread.so.0 This is a fix for the debugger hanging on dlopen)
+    * Create a .gdbinit in your home directory containing this text (This is a fix for the debugger hanging on dlopen): 
+        * (for 64-bit Ubuntu) set env LD_PRELOAD /lib/x86_64-linux-gnu/libpthread.so.0 
+        * (for 32-bit Ubuntu) set env LD_PRELOAD /lib/i386-linux-gnu/libpthread.so.0 
+
 
 ##LibAV
  1. Get source code of Libav 0.7.4 (http://libav.org/releases/libav-0.7.4.tar.xz)
