@@ -13,11 +13,7 @@ Step-by-step guide to setting-up an Ubuntu system for AvxSynth
   1. **Pango** `sudo apt-get install libpango1.0-dev`
   1. **LibJPEG** `sudo apt-get install libjpeg-dev`
   1. **QT** `sudo apt-get -y install libqt4-dev libqt4-designer libqt4-gui`
-  1. **KDev**
-    * Install using Ubuntu Software Center
-    * Create a .gdbinit in your home directory containing this text (This is a fix for the debugger hanging on dlopen): 
-        * (for 64-bit Ubuntu) `set env LD_PRELOAD /lib/x86_64-linux-gnu/libpthread.so.0` 
-        * (for 32-bit Ubuntu) `set env LD_PRELOAD /lib/i386-linux-gnu/libpthread.so.0` 
+
 
 
 ##LibAV
@@ -45,34 +41,8 @@ Step-by-step guide to setting-up an Ubuntu system for AvxSynth
 
          make
 
-  1. Alternatively, you can compile and debug using KDevelop. Click here for instructions.
+  1. Alternatively, you can compile and debug using KDevelop. Click [here](https://github.com/avxsynth/avxsynth/wiki/Using-KDevelop) for instructions.
 
-
-##KDev Setup
-  1. In KDevelop, Project-> Open/Import Project the following Makefiles
-    * avx_root/avxcommon/Makefile
-    * avx_root/avxsynth/core/Makefile
-    * avx_root/avxsynth/builtinfunctions/Makefile
-    * avx_root/plugins/autocrop/Makefile
-    * avx_root/plugins/avxframecapture/Makefile
-    * avx_root/plugins/avxsubtitle/Makefile
-    * avx_root/plugins/ffms2avs/Makefile
-  1. For each of the projects above, right click project -> Open Configuration -> Default make target -> set to "deploy"
-  1. In Kdevelop, Project-> Open/Import Project the following Makefiles
-    * avx_root/apps/avxframeserver/frameserverlib/MakeFile
-    * avx_root/apps/avxframeserver/frameserverapp/Makefile
-    * avx_root/apps/AVXEdit/Makefile
-  1. Right click the frameserverapp project, Open Configuration -> Default make target -> set to "rebuild"
-  1. Right click the AVXEdit project, Open Configuration -> Default make target -> set to "rebuild"
-
-##Build AvxSynth
-  1. For each of the projects, right-click and build.  Must build in this order:
-    * avxcommon
-    * builtinfunctions 
-    * core
-    * frameserverlib
-    * frameserverapp and AVXEdit
-    * autocrop, avxframecapture, avxsubtitle, ffms2avs
 
 ##Basic Test
   1. in KDev configure AVXEdit launch configuration Run-Configure Launches...
