@@ -28,7 +28,7 @@ Step-by-step guide to setting-up an Ubuntu system for AvxSynth
         make
         sudo checkinstall --pkgname=ffmpeg --pkgversion="0.7.4" --backup=no --deldoc=yes --fstrans=no --default
 
-##FFMPEG Source
+##FFMPEGSource
  1. Get source code of FFMS-2.17 (http://code.google.com/p/ffmpegsource/downloads/list?can=1&q=&colspec=Filename+Summary+Uploaded+ReleaseDate+Size+DownloadCount)
  1. Compile and install
 
@@ -36,10 +36,12 @@ Step-by-step guide to setting-up an Ubuntu system for AvxSynth
         make
         sudo checkinstall --pkgname=ffms2 --pkgversion="2.17" --backup=no --deldoc=yes --fstrans=no --default
 
-##Setup AvxSynth Source
-  1. Setup source folder with AvxSynth source code (avx_root)
-  1. Create a directory $HOME$/.AVXSynth/plugins/
-  1. To build using master Makefile from console, goto avx_root, and enter 'make' or 'make clean' followed by 'make'.  This will build in the proper order.
+##AvxSynth Build
+  1. Get AvxSynth source code (avx_root)
+         git clone git@github.com:avxsynth/avxsynth.git
+  1. In avxsynth root directory, 
+         make
+
 ##KDev Setup
   1. In KDevelop, Project-> Open/Import Project the following Makefiles
     * avx_root/avxcommon/Makefile
