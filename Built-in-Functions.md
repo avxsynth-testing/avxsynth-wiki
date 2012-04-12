@@ -1,1 +1,1 @@
-Built in Functions
+Built-in Functions
