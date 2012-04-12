@@ -38,11 +38,11 @@ Kdevelop can be used as an IDE to build and debug AvxSynth. Be sure to set-up th
 ## Build AvxSynth projects
 For each of the projects, right-click and build.  Must build in this order:
 
-    * avxcommon
-    * builtinfunctions 
-    * core
-    * frameserverlib
-    * frameserverapp, AVXEdit
-    * autocrop, avxframecapture, avxsubtitle, avsffms2
+* avxcommon
+* builtinfunctions 
+* core
+* frameserverlib
+* frameserverapp, AVXEdit
+* autocrop, avxframecapture, avxsubtitle, avsffms2
 
 
