@@ -1,4 +1,4 @@
-This page is a guide on setting-up an Ubuntu system for AvxSynth 
+Step-by-step guide to setting-up an Ubuntu system for AvxSynth 
 
 ##Ubuntu Setup
   1. Install ubuntu-11.10-desktop-amd64.iso (64-bit Ubuntu) or ubuntu-11.10-desktop-i386.iso (32-bit Ubuntu) on system or appropriate vm (i.e. Virtual Box).
