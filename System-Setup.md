@@ -4,7 +4,7 @@ Step-by-step guide to setting-up an Ubuntu system for AvxSynth
   1. Install ubuntu-11.10-desktop-amd64.iso (64-bit Ubuntu) or ubuntu-11.10-desktop-i386.iso (32-bit Ubuntu) on system or appropriate vm (i.e. Virtual Box).
   1. Run Update Manager
 
-##Setup Development Environment
+##Install Dependencies
 
   1. **Build Tools**  `sudo apt-get install build-essential checkinstall git yasm`
   1. **MPlayer** `sudo apt-get install  mplayer`
@@ -37,10 +37,15 @@ Step-by-step guide to setting-up an Ubuntu system for AvxSynth
         sudo checkinstall --pkgname=ffms2 --pkgversion="2.17" --backup=no --deldoc=yes --fstrans=no --default
 
 ##AvxSynth Build
-  1. Get AvxSynth source code (avx_root)
+  1. Get AvxSynth source code from github
+
          git clone git@github.com:avxsynth/avxsynth.git
-  1. In avxsynth root directory, 
+
+  1. In avxsynth root directory
          make
+
+  1. Alternatively, you can compile and debug using KDevelop. Click here for instructions.
+
 
 ##KDev Setup
   1. In KDevelop, Project-> Open/Import Project the following Makefiles
