@@ -36,7 +36,7 @@ Kdevelop can be used as an IDE to build and debug AvxSynth. Be sure to set-up th
   1. Right click the AVXEdit project, Open Configuration -> Default make target -> set to "rebuild"
 
 ## Build AvxSynth projects
-  1. For each of the projects, right-click and build.  Must build in this order:
+For each of the projects, right-click and build.  Must build in this order:
     * avxcommon
     * builtinfunctions 
     * core
