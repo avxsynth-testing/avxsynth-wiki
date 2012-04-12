@@ -6,16 +6,14 @@ This page is a guide on setting-up an Ubuntu system for AvxSynth development.
 
 ##Setup Development Environment
 
-  1. *Build Tools:*  `sudo apt-get install build-essential checkinstall git yasm`
-
-  1. *MPlayer:* `sudo apt-get install  mplayer`
-
-  1. *Log4CPP:* `sudo apt-get install liblog4cpp5-dev liblog4cpp5`
-  1. *Cairo:* `sudo apt-get install libcairo2-dev`
-  1. *Pango:* `sudo apt-get install libpango1.0-dev`
-  1. *LibJPEG:* `sudo apt-get install libjpeg-dev`
-  1. *QT:* `sudo apt-get -y install libqt4-dev libqt4-designer libqt4-gui`
-  1. *KDev:*
+  1. **Build Tools**  `sudo apt-get install build-essential checkinstall git yasm`
+  1. **MPlayer** `sudo apt-get install  mplayer`
+  1. **Log4CPP** `sudo apt-get install liblog4cpp5-dev liblog4cpp5`
+  1. **Cairo** `sudo apt-get install libcairo2-dev`
+  1. **Pango** `sudo apt-get install libpango1.0-dev`
+  1. **LibJPEG** `sudo apt-get install libjpeg-dev`
+  1. **QT** `sudo apt-get -y install libqt4-dev libqt4-designer libqt4-gui`
+  1. **KDev**
     * Install using Ubuntu Software Center
     * Create a .gdbinit in your home directory containing this text (This is a fix for the debugger hanging on dlopen): 
         * (for 64-bit Ubuntu) `set env LD_PRELOAD /lib/x86_64-linux-gnu/libpthread.so.0` 
@@ -26,16 +24,16 @@ This page is a guide on setting-up an Ubuntu system for AvxSynth development.
  1. Get source code of Libav 0.7.4 (http://libav.org/releases/libav-0.7.4.tar.xz)
  1. Compile and install
 
-    ./configure --enable-gpl --enable-nonfree --enable-version3 --enable-shared
-    make
-    sudo checkinstall --pkgname=ffmpeg --pkgversion="0.7.4" --backup=no --deldoc=yes --fstrans=no --default
+        ./configure --enable-gpl --enable-nonfree --enable-version3 --enable-shared
+        make
+        sudo checkinstall --pkgname=ffmpeg --pkgversion="0.7.4" --backup=no --deldoc=yes --fstrans=no --default
 
 ##FFMPEG Source
  1. Get source code of FFMS-2.17 (http://code.google.com/p/ffmpegsource/downloads/list?can=1&q=&colspec=Filename+Summary+Uploaded+ReleaseDate+Size+DownloadCount)
  1. Compile and install
-     ./configure --enable-shared
-     make
-     sudo checkinstall --pkgname=ffms2 --pkgversion="2.17" --backup=no --deldoc=yes --fstrans=no --default
+         ./configure --enable-shared
+         make
+         sudo checkinstall --pkgname=ffms2 --pkgversion="2.17" --backup=no --deldoc=yes --fstrans=no --default
 
 ##Setup AvxSynth Source
   1. Setup source folder with AvxSynth source code (avx_root)
