@@ -31,9 +31,10 @@ This page is a guide on setting-up an Ubuntu system for AvxSynth development.
 ##FFMPEG Source
  1. Get source code of FFMS-2.17 (http://code.google.com/p/ffmpegsource/downloads/list?can=1&q=&colspec=Filename+Summary+Uploaded+ReleaseDate+Size+DownloadCount)
  1. Compile and install
-         ./configure --enable-shared
-         make
-         sudo checkinstall --pkgname=ffms2 --pkgversion="2.17" --backup=no --deldoc=yes --fstrans=no --default
+
+        ./configure --enable-shared
+        make
+        sudo checkinstall --pkgname=ffms2 --pkgversion="2.17" --backup=no --deldoc=yes --fstrans=no --default
 
 ##Setup AvxSynth Source
   1. Setup source folder with AvxSynth source code (avx_root)
