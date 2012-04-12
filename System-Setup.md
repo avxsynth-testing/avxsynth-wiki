@@ -42,6 +42,7 @@ Step-by-step guide to setting-up an Ubuntu system for AvxSynth
          git clone git@github.com:avxsynth/avxsynth.git
 
   1. In avxsynth root directory
+
          make
 
   1. Alternatively, you can compile and debug using KDevelop. Click here for instructions.
