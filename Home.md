@@ -12,7 +12,7 @@ To build and run AvxSynth, follow [these](https://github.com/avxsynth/avxsynth/w
 
 You can read about the porting effort [here](https://github.com/avxsynth/avxsynth/wiki/Porting-Discussion).
 
-You can see the status of the built-in function porting here. 
+You can see the status of the built-in function porting [here](https://github.com/avxsynth/avxsynth/wiki/Built-in-Functions). 
 
 ## The AvxSynth Frame Server
 
