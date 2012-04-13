@@ -45,7 +45,7 @@ Step-by-step guide to setting-up an Ubuntu system for AvxSynth
 
 
 ##Basic Test
-  1. Launch AVXEdit. In $avxsynthroot$/apps/AVXEdit
+  1. Launch AVXEdit. In $avxsynthroot$/apps/AVXEdit/
 
          ./AVXEdit
 
