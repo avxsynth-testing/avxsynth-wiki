@@ -5,7 +5,7 @@ The AviSynth model for error handling is to generate video with the error messag
 
 Results in this error video:
 
-http://avxsynth.googlecode.com/svn/wiki/images/AviSynthErrorMsg2.png
+![AvxSynth Error Message](images/AviSynthErrorMsg2.png)
 
 While this is useful for interactive usage, it is not a good behavior for an encoding pipeline.  In an automated encoding system, the last thing that you want is a failed encode to produce a video with an error message.  The desired behavior is to raise an error that will cause the encode to fail.
 
