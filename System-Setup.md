@@ -45,7 +45,10 @@ Step-by-step guide to setting-up an Ubuntu system for AvxSynth
 
 
 ##Basic Test
-  1. in KDev configure AVXEdit launch configuration Run-Configure Launches...
-  1. Click 'Execute' to launch AVXEdit
-  1. In the AVXEdit window, type 'Version()' and click the run button
-  1. you should see MPlayer window with AviSynth version video
+  1. Launch AVXEdit. In $avxsynthroot$/apps/AVXEdit
+
+         ./AVXEdit
+
+  1. In the AVXEdit window, type 'Version()' and click the run button. This will launch an MPlayer window with the AviSynth Version video
+
+  1. For instructions on using the AvxSynth Frame Server, check out [this](https://github.com/avxsynth/avxsynth/wiki/AvxSynth-Frame-Server) page.
