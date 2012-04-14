@@ -11,8 +11,8 @@ Step-by-step guide to setting-up an Ubuntu system for AvxSynth
   1. **Log4CPP** `sudo apt-get install liblog4cpp5-dev liblog4cpp5`
   1. **Cairo** `sudo apt-get install libcairo2-dev`
   1. **Pango** `sudo apt-get install libpango1.0-dev`
-  1. **LibJPEG** `sudo apt-get install libjpeg-dev`
-  1. **QT** `sudo apt-get -y install libqt4-dev libqt4-designer libqt4-gui`
+  1. **LibJPEG** `sudo apt-get install libjpeg-dev` (required to build the frame capture plugin)
+  1. **QT** `sudo apt-get -y install libqt4-dev libqt4-designer libqt4-gui`(required if you want to build the GUI app AvxEdit).
 
 
 
