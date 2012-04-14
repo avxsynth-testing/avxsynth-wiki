@@ -1,0 +1,333 @@
+Built in Functions
+
+h1. Audio
+
+{background:#ddd}. |_. Function |_. Ported |_. Tested |_. Notes |
+|<. DelayAudio|<. Yes |<. Yes |<.  |
+|<. AmplifydB|<. Yes |<. Yes  |<.  |
+|<. Amplify|<. Yes |<. Yes  |<.  |
+|<. AssumeSampleRate|<. Yes |<. Yes  |<.  |
+|<. Normalize|<. Yes |<. Yes  |<.  |
+|<. MixAudio|<. Yes |<. Yes  |<.  |
+|<. ResampleAudio|<. Yes |<. Yes  |<.  |
+|<. ConvertToMono|<. Yes |<. Yes  |<.  |
+|<. EnsureVBRMP3Sync|<. Yes |<. No  |<.  |
+|<. MergeChannels|<. Yes |<. Yes  |<.  |
+|<. MonoToStereo|<. Yes |<. Yes  |<.  |
+|<. GetLeftChannel|<. Yes |<. Yes  |<.  |
+|<. GetRightChannel|<. Yes |<. Yes  |<.  |
+|<. GetChannel|<. Yes |<. Yes  |<.  |
+|<. GetChannels|<. Yes |<. Yes  |<.  |
+|<. KillVideo|<. Yes |<. Yes  |<.  |
+|<. KillAudio|<. Yes |<. Yes  |<.  |
+|<. ConvertAudioTo16bit|<. Yes |<. Yes  |<.  |
+|<. ConvertAudioTo8bit|<. Yes |<. Yes  |<.  |
+|<. ConvertAudioTo24bit|<. Yes |<. Yes  |<.  |
+|<. ConvertAudioTo32bit|<. Yes |<. Yes  |<.  |
+|<. ConvertAudioToFloat|<. Yes |<. Yes  |<.  |
+|<. ConvertAudio|<. Yes |<. Yes  |<.  |
+
+
+h1. Cache
+
+{background:#ddd}. |_. Function |_. Ported |_. Tested |_. Notes |
+|<. Cache|<. Yes |<.  |<.  |
+|<. InternalCache|<. Yes |<.  |<.  |
+
+h1. Core
+
+{background:#ddd}. |_. Function |_. Ported |_. Tested |_. Notes |
+|<. AlignPlanar |<. Yes |<.  |<.  |
+|<. Compare|<. Yes |<.  |<.  |
+|<. ShowFrameNumber|<. Yes |<.  |<.  |
+|<. ShowSMPTE|<. Yes |<.  |<. |
+|<. ShowTime|<. Yes |<.  |<.  |
+|<. Info|<. Yes |<.  |<.  |
+|<. Subtitle|<. Yes |<.  |<.  |
+
+h1. Convert
+
+{background:#ddd}. |_. Function |_. Ported |_. Tested |_. Notes |
+|<. ConvertToRGB |<.  Yes |<.  |<.  MMX and SSE not ported |
+|<. ConvertToRGB24 |<.  Yes |<.  |<.  MMX and SSE not ported |
+|<. ConvertToRGB32 |<.  Yes |<.  |<.  MMX and SSE not ported |
+|<. ConvertToYV12|<.  Yes |<.  |<.  MMX and SSE not ported |
+|<. ConvertToYUY2|<.  Yes |<.  |<.  MMX and SSE not ported |
+|<. ConvertBackToYUY2|<.  Yes |<.  |<.  MMX and SSE not ported |
+
+h1. Color
+
+{background:#ddd}. |_. Function |_. Ported |_. Tested |_. Notes |
+|<. ColorYUV |<. Yes |<. |<. |
+
+h1. Combine
+
+{background:#ddd}. |_. Function |_. Ported |_. Tested |_. Notes |
+|<. StackVertical|<.  Yes |<.  |<.  |
+|<. StackHorizontal|<.  Yes |<.  |<.  |
+|<. ShowFiveVersions|<.  Yes |<.  |<.  |
+|<. Animate|<.  Yes |<.  |<.  |
+|<. ApplyRange|<.  Yes |<.  |<.  |
+
+h1. Conditional
+
+{background:#ddd}. |_. Function |_. Ported |_. Tested |_. Notes |
+|<. ConditionalFilter|<.  Yes |<.  |<.  |
+|<. ScriptClip|<.  Yes |<.  |<.  |
+|<. ConditionalReader|<.  Yes |<.  |<.  |
+|<. WriteFile|<.  Yes |<.  |<.  |
+|<. WriteFileIf|<.  Yes |<.  |<.  |
+|<. WriteFileStart|<.  Yes |<.  |<.  |
+|<. WriteFileEnd|<.  Yes |<.  |<.  |
+
+h1. Convolution
+
+{background:#ddd}. |_. Function |_. Ported |_. Tested |_. Notes |
+|<. Convolution|<. Yes |<. |<. |
+
+h1. Debug
+
+{background:#ddd}. |_. Function |_. Ported |_. Tested |_. Notes |
+|<. Null|<.  Yes |<.  |<.  |
+|<. PlanarLegacyAlignment|<.  Yes |<.  |<.  |
+|<. ErrorHandlingExternal|<.  Yes |<.  |<. New command added by AvxSynth |
+
+h1. Edit
+
+{background:#ddd}. |_. Function |_. Ported |_. Tested |_. Notes |
+|<. Trim|<.  Yes |<.  |<.  |
+|<. FreezeFrame|<.  Yes |<.  |<.  |
+|<. DeleteFrame|<.  Yes |<.  |<.  |
+|<. DuplicateFrame|<.  Yes |<.  |<.  |
+|<. UnalignedSplice|<.  Yes |<.  |<.  |
+|<. AlignedSplice|<.  Yes |<.  |<.  |
+|<. AudioDub|<.  Yes |<.  |<.  |
+|<. AudioDubEx|<.  Yes |<.  |<.  |
+|<. Dissolve|<.  Yes |<.  |<.  MMX and SSE not ported |
+|<. FadeOut0|<.  Yes |<.  |<.  MMX and SSE not ported |
+|<. FadeOut|<.  Yes |<.  |<.  MMX and SSE not ported |
+|<. FadeOut2|<.  Yes |<.  |<.  MMX and SSE not ported |
+|<. FadeIn|<.  Yes |<.  |<.  MMX and SSE not ported |
+|<. FadeIn2|<.  Yes |<.  |<.  MMX and SSE not ported |
+|<. FadeIO|<.  Yes |<.  |<.  MMX and SSE not ported |
+|<. FadeIO2|<.  Yes |<.  |<.  MMX and SSE not ported |
+|<. Loop|<.  Yes |<.  |<.  MMX and SSE not ported |
+
+h1. Field
+
+{background:#ddd}. |_. Function |_. Ported |_. Tested |_. Notes |
+|<. ComplementParity|<.  Yes |<.  |<.  |
+|<. AssumeTFF|<.  Yes |<.  |<.  |
+|<. AssumeBFF|<.  Yes |<.  |<.  |
+|<. AssumeFieldBased|<.  Yes |<.  |<.  |
+|<. AssumeFrameBased|<.  Yes |<.  |<.  |
+|<. SeparateFields|<.  Yes |<.  |<.  |
+|<. Weave|<.  Yes |<.  |<.  |
+|<. DoubleWeave|<.  Yes |<.  |<.  |
+|<. Pulldown|<.  Yes |<.  |<.  |
+|<. SelectEvery|<.  Yes |<.  |<.  |
+|<. SelectEven|<.  Yes |<.  |<.  |
+|<. SelectOdd|<.  Yes |<.  |<.  |
+|<. Interleave|<.  Yes |<.  |<.  |
+|<. SwapFields|<.  Yes |<.  |<.  |
+|<. Bob|<.  No |<.  |<.  |
+|<. SelectRangeEvery|<.  Yes |<.  |<.  |
+
+h1. Focus
+
+{background:#ddd}. |_. Function |_. Ported |_. Tested |_. Notes |
+|<. Blur|<.  Yes |<.  |<.  MMX and SSE not ported |
+|<. Sharpen|<.  Yes |<.  |<.  MMX and SSE not ported |
+|<. TemporalSoften|<.  No |<.  |<.  |
+|<. SpatialSoften|<.  Yes |<.  |<.  |
+
+h1. Fps
+
+{background:#ddd}. |_. Function |_. Ported |_. Tested |_. Notes |
+|<. AssumeFPS|<.  Yes |<.  |<.  |
+|<. ChangeFPS|<.  Yes |<.  |<.  |
+|<. ConvertFPS|<.  Yes |<.  |<.  |
+
+h1. Grayscale
+
+{background:#ddd}. |_. Function |_. Ported |_. Tested |_. Notes |
+|<. Grayscale|<. Yes |<. |<. MMX and SSE not ported |
+
+h1. Histogram
+
+{background:#ddd}. |_. Function |_. Ported |_. Tested |_. Notes |
+|<. Histogram|<. Yes |<. |<. |
+
+h1. Layer
+
+{background:#ddd}. |_. Function |_. Ported |_. Tested |_. Notes |
+|<. Mask|<.  No |<.  |<.  |
+|<. ColorKeyMask|<.  No |<.  |<.  |
+|<. ResetMask|<.  Yes |<.  |<.  |
+|<. Invert|<.  No |<.  |<.  |
+|<. ShowAlpha|<.  Yes |<.  |<.  |
+|<. ShowRed|<.  Yes |<.  |<.  |
+|<. ShowGreen|<.  Yes |<.  |<.  |
+|<. ShowBlue|<.  Yes |<.  |<.  |
+|<. MergeRGB|<.  Yes |<.  |<.  |
+|<. MergeARGB|<.  Yes |<.  |<.  |
+|<. Layer|<.  No |<.  |<.  |
+|<. Subtract|<.  Yes |<.  |<.  |
+
+h1. Levels
+
+{background:#ddd}. |_. Function |_. Ported |_. Tested |_. Notes |
+|<. Levels|<.  Yes |<.  |<.  |
+|<. RGBAdjust|<.  Yes |<.  |<.  |
+|<. Tweak|<.  Yes |<.  |<.  |
+|<. Limiter|<.  Yes |<.  |<.  |
+
+h1. Merge
+
+{background:#ddd}. |_. Function |_. Ported |_. Tested |_. Notes |
+|<. Merge|<.  Yes |<.  |<.  MMX and SSE not ported |
+|<. MergeChroma|<.  Yes |<.  |<.  MMX and SSE not ported |
+|<. MergeLuma|<.  Yes |<.  |<.  MMX and SSE not ported |
+
+h1. Misc
+
+{background:#ddd}. |_. Function |_. Ported |_. Tested |_. Notes |
+|<. FixLuminance|<.  Yes |<.  |<.  |
+|<. FixBrokenChromaUpsampling|<.  Yes |<.  |<.  |
+|<. PeculiarBlend|<.  Yes |<.  |<.  |
+
+h1. Planeswap
+
+{background:#ddd}. |_. Function |_. Ported |_. Tested |_. Notes |
+|<. SwapUV|<.  Yes |<.  |<.  MMX and SSE not ported |
+|<. UToY|<.  Yes |<.  |<.  MMX and SSE not ported |
+|<. VToY|<.  Yes |<.  |<.  MMX and SSE not ported |
+|<. YToUV|<.  Yes |<.  |<.  MMX and SSE not ported |
+
+h1. Resample
+
+{background:#ddd}. |_. Function |_. Ported |_. Tested |_. Notes |
+|<. PointResize|<.  No, but invokes SWScale external plugin |<.  |<.  Need SWScale |
+|<. BilinearResize|<.  No, but invokes SWScale external plugin |<.  |<.  Need SWScale |
+|<. BicubicResize|<.  No, but invokes SWScale external plugin |<.  |<.  Need SWScale |
+|<. LanczosResize|<.  No, but invokes SWScale external plugin |<.  |<.  Need SWScale |
+|<. Lanczos4Resize|<.  No, but invokes SWScale external plugin |<.  |<.  Need SWScale |
+|<. BlackmanResize|<.  No, but invokes SWScale external plugin |<.  |<.  Need SWScale |
+|<. Spline16Resize|<.  No, but invokes SWScale external plugin |<.  |<.  Need SWScale |
+|<. Spline36Resize|<.  No, but invokes SWScale external plugin |<.  |<.  Need SWScale |
+|<. Spline64Resize|<.  No, but invokes SWScale external plugin |<.  |<.  Need SWScale |
+|<. GaussResize|<.  No, but invokes SWScale external plugin |<.  |<.  Need SWScale |
+
+h1. Resize
+
+{background:#ddd}. |_. Function |_. Ported |_. Tested |_. Notes |
+|<. VerticalReduceBy2|<.  Yes |<.  |<.  MMX and SSE not ported |
+|<. HorizontalReduceBy2|<.  Yes |<.  |<.  MMX and SSE not ported |
+|<. ReduceBy2|<.  Yes |<.  |<.  MMX and SSE not ported |
+
+h1. Script
+
+{background:#ddd}. |_. Function |_. Ported |_. Tested |_. Notes |
+|<. muldiv|<.  Yes |<.  |<.  |
+|<. floor|<.  Yes |<.  |<.  |
+|<. ceil|<.  Yes |<.  |<.  |
+|<. round|<.  Yes |<.  |<.  |
+|<. sin|<.  Yes |<.  |<.  |
+|<. cos|<.  Yes |<.  |<.  |
+|<. pi|<.  Yes |<.  |<.  |
+|<. log|<.  Yes |<.  |<.  |
+|<. exp|<.  Yes |<.  |<.  |
+|<. pow|<.  Yes |<.  |<.  |
+|<. sqrt|<.  Yes |<.  |<.  |
+|<. abs|<.  Yes |<.  |<.  |
+|<. abs (f)|<.  Yes |<.  |<.  |
+|<. sign|<.  Yes |<.  |<.  |
+|<. lcase|<.  Yes |<.  |<.  |
+|<. ucase|<.  Yes |<.  |<.  |
+|<. strlen|<.  Yes |<.  |<.  |
+|<. revstr|<.  Yes |<.  |<.  |
+|<. leftstr|<.  Yes |<.  |<.  |
+|<. midstr|<.  Yes |<.  |<.  |
+|<. rightstr|<.  Yes |<.  |<.  |
+|<. rand|<.  Yes |<.  |<.  |
+|<. Select|<.  Yes |<.  |<.  |
+|<. nop|<.  Yes |<.  |<.  |
+|<. width|<.  Yes |<.  |<.  |
+|<. height|<.  Yes |<.  |<.  |
+|<. framecount|<.  Yes |<.  |<.  |
+|<. framerate|<.  Yes |<.  |<.  |
+|<. frameratenumerator|<.  Yes |<.  |<.  |
+|<. frameratedenominator|<.  Yes |<.  |<.  |
+|<. audiorate|<.  Yes |<.  |<.  |
+|<. audiolength|<.  Yes |<.  |<.  |
+|<. audiolengthf|<.  Yes |<.  |<.  |
+|<. audiochannels|<.  Yes |<.  |<.  |
+|<. audiobits|<.  Yes |<.  |<.  |
+|<. IsAudioFloat|<.  Yes |<.  |<.  |
+|<. IsAudioInt|<.  Yes |<.  |<.  |
+|<. IsRGB|<.  Yes |<.  |<.  |
+|<. IsYUY2|<.  Yes |<.  |<.  |
+|<. IsYUV|<.  Yes |<.  |<.  |
+|<. IsYV12|<.  Yes |<.  |<.  |
+|<. IsPlanar|<.  Yes |<.  |<.  |
+|<. IsInterleaved|<.  Yes |<.  |<.  |
+|<. IsRGB24|<.  Yes |<.  |<.  |
+|<. IsRGB32|<.  Yes |<.  |<.  |
+|<. IsFieldBased|<.  Yes |<.  |<.  |
+|<. IsFrameBased|<.  Yes |<.  |<.  |
+|<. GetParity|<.  Yes |<.  |<.  |
+|<. String|<.  Yes |<.  |<.  |
+|<. IsBool|<.  Yes |<.  |<.  |
+|<. IsInt|<.  Yes |<.  |<.  |
+|<. IsString|<.  Yes |<.  |<.  |
+|<. IsClip|<.  Yes |<.  |<.  |
+|<. Defined|<.  Yes |<.  |<.  |
+|<. Default|<.  Yes |<.  |<.  |
+|<. Eval|<.  Yes |<.  |<.  |
+|<. Apply|<.  Yes |<.  |<.  |
+|<. Import|<.  Yes |<.  |<.  |
+|<. Assert|<.  Yes |<.  |<.  |
+|<. Assert (s)|<.  Yes |<.  |<.  |
+|<. SetMemoryMax|<.  Yes |<.  |<.  |
+|<. SetWorkingDir|<.  Yes |<.  |<.  |
+|<. Chr|<.  Yes |<.  |<.  |
+|<. Time|<.  Yes |<.  |<.  |
+|<. Spline|<.  Yes |<.  |<.  |
+|<. int|<.  Yes |<.  |<.  |
+|<. frac|<.  Yes |<.  |<.  |
+|<. float|<.  Yes |<.  |<.  |
+|<. value|<.  Yes |<.  |<.  |
+|<. hexvalue|<.  Yes |<.  |<.  |
+|<. VersionNumber|<.  Yes |<.  |<.  |
+|<. VersionString|<.  Yes |<.  |<.  |
+|<. HasVideo|<.  Yes |<.  |<.  |
+|<. HasAudio|<.  Yes |<.  |<.  |
+|<. Min|<.  Yes |<.  |<.  |
+|<. Max|<.  Yes |<.  |<.  |
+
+h1. Source
+
+{background:#ddd}. |_. Function |_. Ported |_. Tested |_. Notes |
+|<. BlankClip|<.  Yes |<.  |<.  |
+|<. Blackness|<.  Yes |<.  |<.  |
+|<. MessageClip|<.  Yes |<.  |<.  |
+|<. ColorBars|<.  Yes |<.  |<.  |
+|<. Tone|<.  Yes |<.  |<.  |
+|<. Version|<.  Yes |<.  |<.  |
+
+h1. Transform
+
+{background:#ddd}. |_. Function |_. Ported |_. Tested |_. Notes |
+|<. FlipVertical|<.  Yes |<.  |<.  |
+|<. FlipHorizontal|<.  Yes |<.  |<.  |
+|<. Crop|<.  Yes |<.  |<.  |
+|<. CropBottom|<.  Yes |<.  |<.  |
+|<. AddBorders|<.  Yes |<.  |<.  |
+|<. Letterbox|<.  Yes |<.  |<.  |
+
+h1. Turn
+
+{background:#ddd}. |_. Function |_. Ported |_. Tested |_. Notes |
+|<. TurnLeft|<.  Yes |<.  |<.  |
+|<. TurnRight|<.  Yes |<.  |<.  |
+|<. Turn180|<.  Yes |<.  |<.  |
