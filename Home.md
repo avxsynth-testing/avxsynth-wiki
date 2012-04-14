@@ -20,7 +20,7 @@ The AvxSynth toolkit includes a frame server application that delivers decoded f
 
 ## Watch
 
-Click [here](http://www.youtube.com/watch?v=DdaQeMcE0UM&context=C49774bdADvjVQa1PpcFPjEU87afkCgg4WN_KrxYQ2lYo_e_FWKPI=) to see a short video of AvxSynth in action. Or watch in low-res below. This video demonstrates the ffmpeg source, ffmpeg scaling, ShowSMPTE, and AvxSubtitle, a new filter that does caption burn-in.
+Click [here](http://www.youtube.com/watch?v=DdaQeMcE0UM&context=C49774bdADvjVQa1PpcFPjEU87afkCgg4WN_KrxYQ2lYo_e_FWKPI=) to see a short video of AvxSynth in action. This video demonstrates the ffmpeg source, ffmpeg scaling, ShowSMPTE, and AvxSubtitle, a new filter that does caption burn-in.
 
 ## Error Handling
 
