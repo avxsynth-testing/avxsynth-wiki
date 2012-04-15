@@ -1,4 +1,4 @@
-#summary Documentation of current status of functionality testing.
+#Documentation of current status of functionality testing.
 
 # Introduction
 
@@ -57,11 +57,11 @@ EnsureVBRMP3Sync
 
  * Not tested as simultaneous A/V is not supported
 
-MonoToStereo()
+MonoToStereo
 
  * Working
 
-MergeChannels()
+MergeChannels
 
  * Working
 
@@ -69,7 +69,7 @@ GetChannel family
 
  * Working
 
-KillVideo() / KillAudio()
+KillVideo / KillAudio
 
  * Working
 
@@ -164,3 +164,39 @@ ApplyRange
 ``ColorBars().KillAudio()``
 
 ``ApplyRange(1, 2, "Crop") # internal error occurs``
+
+## Conditional
+
+ConditionalFilter
+
+ * working
+
+ScriptClip / FrameEvaluate:
+
+ * after_frame working
+ * show working
+
+ConditionalReader:
+
+ * bool, float, int working
+ * range, interpolate, default working
+ * show working
+
+WriteFile family:
+
+ * WriteFile, WriteFileIf, WriteFileStart working
+ * WriteFileEnd not working (?)
+
+``BlankClip()``
+
+``WriteFileEnd("writefile.txt", """ "The End" """) # Nothing is written``
+
+## Convolution
+
+GeneralConvolution:
+
+ * Not working (segfault)
+
+``ColorBars()``
+
+``GeneralConvolution(0, "0 0 0 0 1 0 0 0 0")``
