@@ -194,3 +194,41 @@ GeneralConvolution:
 
         ColorBars()
         GeneralConvolution(0, "0 0 0 0 1 0 0 0 0")
+
+## Debug
+
+Null
+
+ * Not testable
+
+PlanarLegacyAlignment
+
+ * Requires external plugins to test
+
+ErrorHandlingExternal
+
+ * Requires additional software to test
+
+## Edit
+
+Trim / FreezeFrame / DeleteFrame / DuplicateFrame
+
+ * Working
+
+AlignedSplice / UnalignedSplice
+
+ * Working
+
+AudioDub / AudioDubEx
+
+ * Working
+
+Dissolve
+
+ * Working
+
+FadeIn/Out/IO family
+
+ * All functions except FadeIn/Out/IO0 truncate audio-only streams
+
+        FadeIO2(Tone(length=3), 48, fps=48) # The total length should be 3.25s, but only 3s of audio is generated
