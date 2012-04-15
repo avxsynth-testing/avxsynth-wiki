@@ -1,5 +1,3 @@
-#Documentation of current status of functionality testing.
-
 # Introduction
 
 AVXSynth is experimental software, and much of its code has not been tested for correct operation. This page will serve to document the current status of testing and describe the testing methodology. Mainline Avisynth 2.5.8 for Windows will be used as the reference. Testing scripts used can be found in the /tests/ directory of the SVN repository.
