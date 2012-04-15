@@ -93,10 +93,8 @@ Compare
 
  * Not working. Will always claim colorspaces are not the same.
 
-
-``BlankClip().KillAudio()``
-
-``Compare(last, last) # The colorspaces are obviously the same``
+        BlankClip().KillAudio()
+        Compare(last, last) # The colorspaces are obviously the same
 
 ShowFrameNumber / ShowSMPTE / ShowTime / Subtitle
 
@@ -114,9 +112,8 @@ Info
  * Working on frame-based video
  * Not working on field-based video (does not print anything)
 
-``ColorBars().Info() # This works``
-
-``ColorBars().SeparateFields().Info() # This doesn't work``
+        ColorBars().Info() # This works
+        ColorBars().SeparateFields().Info() # This doesn't work
 
 ## Convert
 
@@ -161,9 +158,8 @@ ApplyRange
 
  * aborts with exception
 
-``ColorBars().KillAudio()``
-
-``ApplyRange(1, 2, "Crop") # internal error occurs``
+        ColorBars().KillAudio()
+        ApplyRange(1, 2, "Crop") # internal error occurs
 
 ## Conditional
 
@@ -187,9 +183,8 @@ WriteFile family:
  * WriteFile, WriteFileIf, WriteFileStart working
  * WriteFileEnd not working (?)
 
-``BlankClip()``
-
-``WriteFileEnd("writefile.txt", """ "The End" """) # Nothing is written``
+        BlankClip()
+        WriteFileEnd("writefile.txt", """ "The End" """) # Nothing is written
 
 ## Convolution
 
@@ -197,6 +192,5 @@ GeneralConvolution:
 
  * Not working (segfault)
 
-``ColorBars()``
-
-``GeneralConvolution(0, "0 0 0 0 1 0 0 0 0")``
+        ColorBars()
+        GeneralConvolution(0, "0 0 0 0 1 0 0 0 0")
