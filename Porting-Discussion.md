@@ -13,11 +13,11 @@ When we began the port, we evaluated the AviSynth 3.0, Linux port.  However, we 
 
 After studying AviSynth, we divided the project up into its major architectural components: scripting engine, plugin-in model, built-in functions, built-in sources, TCP deliver, and the Video For Windows (VFW) layer.  This is illustrated in the image below.
 
-http://avxsynth.googlecode.com/svn/wiki/images/AviSynthArchOverview.png
+![AviSynth Architecture Overview](images/AviSynthArchOverview.png)
 
 Of these modules, we decided that the VFW layer, TCP Deliver, and the built-in sources were not of interest.  In particular, the built-in DirectShow Source filter was not easily portable.  This left us with the scripting engine, plug-in model, and built-in functions as shown in the image below.
 
-http://avxsynth.googlecode.com/svn/wiki/images/AviSynthArchOverview2.png
+![AviSynth Architecture Overview 2](images/AviSynthArchOverview2.png)
 
 At this point, we felt that we had a manageable project.  
 
