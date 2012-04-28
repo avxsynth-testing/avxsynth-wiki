@@ -4,6 +4,8 @@ Step-by-step guide to setting-up an Ubuntu system for AvxSynth
   1. Install ubuntu-11.10-desktop-amd64.iso (64-bit Ubuntu) or ubuntu-11.10-desktop-i386.iso (32-bit Ubuntu) on system or appropriate vm (i.e. Virtual Box).
   1. Run Update Manager
 
+(Note: Ubuntu 12.04 LTS appears to work as well without any changes to the procedure)
+
 ##Install Dependencies
 
   1. **Build Tools**  `sudo apt-get install build-essential checkinstall git yasm`
@@ -23,6 +25,8 @@ Step-by-step guide to setting-up an Ubuntu system for AvxSynth
         ./configure --enable-gpl --enable-nonfree --enable-version3 --enable-shared
         make
         sudo checkinstall --pkgname=ffmpeg --pkgversion="0.7.4" --backup=no --deldoc=yes --fstrans=no --default
+
+(If using libav 0.8+, the --enable-postproc option must be set, as it is now disabled by default)
 
 ##FFMPEGSource
  1. Get source code of FFMS-2.17 (http://code.google.com/p/ffmpegsource/downloads/list?can=1&q=&colspec=Filename+Summary+Uploaded+ReleaseDate+Size+DownloadCount)
