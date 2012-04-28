@@ -232,3 +232,19 @@ FadeIn/Out/IO family
  * All functions except FadeIn/Out/IO0 truncate audio-only streams
 
         FadeIO2(Tone(length=3), 48, fps=48) # The total length should be 3.25s, but only 3s of audio is generated
+
+## Field
+
+All working
+
+## Focus
+
+All working
+
+## FPS
+
+All working (ConvertFPS in switch mode is not tested, but appears to be working).
+
+## Histogram
+
+Not tested thoroughly, but appears to be working.
