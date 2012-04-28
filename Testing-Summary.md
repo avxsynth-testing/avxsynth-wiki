@@ -190,10 +190,7 @@ WriteFile family:
 
 GeneralConvolution:
 
- * Not working (segfault)
-
-        ColorBars()
-        GeneralConvolution(0, "0 0 0 0 1 0 0 0 0")
+ * Working
 
 ## Debug
 
