@@ -235,11 +235,11 @@ FadeIn/Out/IO family
 
 ## Field
 
-All working
+All working (except Bob is not implemented).
 
 ## Focus
 
-All working
+All working (except TemporalSoften is not implemented).
 
 ## FPS
 
