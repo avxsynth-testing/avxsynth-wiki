@@ -245,3 +245,25 @@ All working (ConvertFPS in switch mode is not tested, but appears to be working)
 ## Histogram
 
 Not tested thoroughly, but appears to be working.
+
+## Layer
+
+All working (except Invert, Layer, Overlay, Mask, ColorKeyMask not implemented)
+
+## Levels
+
+Levels
+
+ * Working
+
+RGBAdjust
+
+ * analyze=true parameter not working
+
+Tweak
+
+ * Working
+
+Limiter
+
+ * Working
