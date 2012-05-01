@@ -39,6 +39,10 @@ Step-by-step guide to setting-up an Ubuntu system for AvxSynth
 ##AvxSynth Build
   1. Get AvxSynth source code from github
 
+         git clone 
+
+     (or via ssh)
+
          git clone git@github.com:avxsynth/avxsynth.git
 
   1. In avxsynth root directory
