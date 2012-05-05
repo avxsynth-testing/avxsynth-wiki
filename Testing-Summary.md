@@ -267,3 +267,71 @@ Tweak
 Limiter
 
  * Working
+
+## Merge
+
+All working
+
+## Misc
+
+FixLuminance / FixBrokenChromaUpsampling / PeculiarBlend
+
+ * These filters are obsolete and have not been tested.
+
+## Planeswap
+
+All working
+
+## Resample
+
+Avisynth resamplers have been remapped to libswscale functions. Only setting the target frame dimensions is currently supported.
+
+## Resize
+
+VerticalReduceBy2
+
+ * The top line is handled differently from mainline Avisynth (see issue #22)
+
+HorizontalReduceBy2
+
+ * Working
+
+ReduceBy2
+
+ * See VerticalReduceBy2
+
+## Source
+
+BlankClip / Blackness
+
+ * Working
+
+MessageClip
+
+ * Width and height parameters are not respected. The clip will always be 640x480.
+
+ColorBars
+
+ * Working
+
+Tone
+
+ * Working
+
+Version
+
+ * Working, but dimensions and text have been updated to match new project.
+
+## Transform
+
+FlipVertical / FlipHorizontal
+
+ * Working
+
+Crop / CropBottom / LetterBox
+
+ * Working
+
+TurnLeft / TurnRight / Turn180
+
+ * Segmentation fault on exit, scrambled output
