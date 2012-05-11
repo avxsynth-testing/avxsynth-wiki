@@ -284,7 +284,7 @@ All working
 
 ## Resample
 
-Avisynth resamplers have been remapped to libswscale functions. Only setting the target frame dimensions is currently supported.
+Avisynth resamplers have been remapped to libswscale functions. Point, Bilinear, Bicubic, Lanczos, and Spline algorithms are available. Only setting the target frame dimensions is currently supported. Counter-intuitively, the resizers are defined in Avxsynth core, but require the avxffms2 plugin to run.
 
 ## Resize
 
