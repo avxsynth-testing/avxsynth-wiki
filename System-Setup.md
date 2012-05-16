@@ -15,18 +15,19 @@ Step-by-step guide to setting-up an Ubuntu system for AvxSynth
   1. **Pango** `sudo apt-get install libpango1.0-dev`
   1. **LibJPEG** `sudo apt-get install libjpeg-dev` (required to build the frame capture plugin)
   1. **QT** `sudo apt-get -y install libqt4-dev libqt4-designer libqt4-gui`(required if you want to build the GUI app AvxEdit).
+  1. **ffms2** `sudo apt-get install libffms2-dev libavcodec-dev libavformat-dev libavutil-dev libpostproc-dev libswscale-dev` (required to build the ffms2 plugin)
 
-
+Alternatively to installing ffms and ffmpeg from repository, you may build them as follows:
 
 ##LibAV
- 1. Get source code of Libav 0.7.4 (http://libav.org/releases/libav-0.7.4.tar.xz)
+ 1. Get source code of Libav 0.8.1 (http://libav.org/releases/libav-0.8.1.tar.xz)
  1. Compile and install
 
-        ./configure --enable-gpl --enable-nonfree --enable-version3 --enable-shared
+        ./configure --enable-gpl --enable-nonfree --enable-version3 --enable-shared --enable-postproc
         make
-        sudo checkinstall --pkgname=ffmpeg --pkgversion="0.7.4" --backup=no --deldoc=yes --fstrans=no --default
+        sudo checkinstall --pkgname=ffmpeg --pkgversion="0.8.1" --backup=no --deldoc=yes --fstrans=no --default
 
-(If using libav 0.8+, the --enable-postproc option must be set, as it is now disabled by default)
+(The --enable-postproc option must be set, otherwise the ffms2 plugin won't build)
 
 ##FFMPEGSource
  1. Get source code of FFMS-2.17 (http://code.google.com/p/ffmpegsource/downloads/list?can=1&q=&colspec=Filename+Summary+Uploaded+ReleaseDate+Size+DownloadCount)
@@ -45,11 +46,15 @@ Step-by-step guide to setting-up an Ubuntu system for AvxSynth
 
          git clone git@github.com:avxsynth/avxsynth.git
 
-  1. In avxsynth root directory
+  1. In avxsynth root directory (to see other options, call ./configure --help)
 
-         make
+         ./configure && make
 
-  1. Alternatively, you can compile and debug using KDevelop. Click [here](https://github.com/avxsynth/avxsynth/wiki/Using-KDevelop) for instructions.
+  1. To install
+
+         make install
+
+  1. Alternatively, you can compile and debug using KDevelop. Click [here](https://github.com/avxsynth/avxsynth/wiki/Using-KDevelop) for instructions. Make sure you run configure before following these instructions.
 
 
 ##Basic Test
