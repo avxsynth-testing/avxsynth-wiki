@@ -1,10 +1,8 @@
 Step-by-step guide to setting-up an Ubuntu system for AvxSynth 
 
 ##Ubuntu Setup
-  1. Install ubuntu-11.10-desktop-amd64.iso (64-bit Ubuntu) or ubuntu-11.10-desktop-i386.iso (32-bit Ubuntu) on system or appropriate vm (i.e. Virtual Box).
+  1. Install ubuntu-12.04-desktop-amd64.iso (64-bit Ubuntu) or ubuntu-12.04-desktop-i386.iso (32-bit Ubuntu) on system or appropriate vm (i.e. Virtual Box).
   1. Run Update Manager
-
-(Note: Ubuntu 12.04 LTS appears to work as well without any changes to the procedure)
 
 ##Install Dependencies
 
