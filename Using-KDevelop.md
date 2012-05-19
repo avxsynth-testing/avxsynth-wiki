@@ -20,29 +20,24 @@ Kdevelop can be used as an IDE to build and debug AvxSynth. Be sure to set-up th
 
 ## Import projects
   1. In KDevelop, Project-> Open/Import Project the following Makefiles
-    * $avxsynthroot$/avxcommon/Makefile
+    * $avxsynthroot$/avxutil/Makefile
     * $avxsynthroot$/avxsynth/core/Makefile
     * $avxsynthroot$/avxsynth/builtinfunctions/Makefile
     * $avxsynthroot$/plugins/autocrop/Makefile
     * $avxsynthroot$/plugins/avxframecapture/Makefile
     * $avxsynthroot$/plugins/avxsubtitle/Makefile
     * $avxsynthroot$/plugins/avsffms2/Makefile
-  1. For each of the projects above, right click project -> Open Configuration -> Default make target -> set to "deploy"
   1. In Kdevelop, Project-> Open/Import Project the following Makefiles
     * $avxsynthroot$/apps/avxframeserver/frameserverlib/MakeFile
     * $avxsynthroot$/apps/avxframeserver/frameserverapp/Makefile
     * $avxsynthroot$/apps/AVXEdit/Makefile
-  1. Right click the frameserverapp project, Open Configuration -> Default make target -> set to "rebuild"
-  1. Right click the AVXEdit project, Open Configuration -> Default make target -> set to "rebuild"
 
 ## Build AvxSynth projects
 For each of the projects, right-click and build.  Must build in this order:
 
-* avxcommon
+* avxutil
 * builtinfunctions 
 * core
 * frameserverlib
 * frameserverapp, AVXEdit
 * autocrop, avxframecapture, avxsubtitle, avsffms2
-
-
