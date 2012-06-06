@@ -8,6 +8,7 @@ AVXSynth is experimental software, and much of its code has not been tested for 
 
  * Some functions that depend on Windows-specific functionality (e.g. AVISource, DirectShowSource) have not been ported.
  * Assembly code has not been ported. This may result in different output from Windows.
+ * There are currently issues with getting reliable audio output.
 
 # Tested Functions
 
@@ -37,7 +38,6 @@ AssumeSampleRate
 Normalize
 
  * Working
- * "show" not tested as simultaneous A/V is not supported
 
 MixAudio
 
@@ -91,10 +91,13 @@ AlignPlanar
 
 Compare
 
- * Not working. Will always claim colorspaces are not the same.
+ * Limited functionality. All clips are converted to RGB24 internally.
 
-        BlankClip().KillAudio()
-        Compare(last, last) # The colorspaces are obviously the same
+        BlankClip(pixel_type="YV12")
+        Compare(last, last, "Y") # reports "invalid channel 'Y'"
+
+        BlankClip(pixel_type="YV12")
+        Compare(last, last, "R") # works
 
 ShowFrameNumber / ShowSMPTE / ShowTime / Subtitle
 
@@ -109,11 +112,7 @@ ShowFrameNumber / ShowSMPTE / ShowTime / Subtitle
 
 Info
 
- * Working on frame-based video
- * Not working on field-based video (does not print anything)
-
-        ColorBars().Info() # This works
-        ColorBars().SeparateFields().Info() # This doesn't work
+ * Working
 
 ## Convert
 
@@ -156,16 +155,13 @@ Animate
 
 ApplyRange
 
- * aborts with exception
-
-        ColorBars().KillAudio()
-        ApplyRange(1, 2, "Crop") # internal error occurs
+ * Working
 
 ## Conditional
 
 ConditionalFilter
 
- * working
+ * Working
 
 ScriptClip / FrameEvaluate:
 
@@ -204,7 +200,7 @@ PlanarLegacyAlignment
 
 ErrorHandlingExternal
 
- * Requires additional software to test
+ * Working
 
 ## Edit
 
@@ -290,7 +286,7 @@ Avisynth resamplers have been remapped to libswscale functions. Point, Bilinear,
 
 VerticalReduceBy2
 
- * The top line is handled differently from mainline Avisynth (see issue #22)
+ * The top line is handled differently from mainline Avisynth (see issue #22).
 
 HorizontalReduceBy2
 
@@ -334,4 +330,4 @@ Crop / CropBottom / LetterBox
 
 TurnLeft / TurnRight / Turn180
 
- * Segmentation fault on exit, scrambled output
+ * Working
