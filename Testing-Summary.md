@@ -176,11 +176,7 @@ ConditionalReader:
 
 WriteFile family:
 
- * WriteFile, WriteFileIf, WriteFileStart working
- * WriteFileEnd not working (?)
-
-        BlankClip()
-        WriteFileEnd("writefile.txt", """ "The End" """) # Nothing is written
+ * All working
 
 ## Convolution
 
@@ -304,7 +300,7 @@ BlankClip / Blackness
 
 MessageClip
 
- * Width and height parameters are not respected. The clip will always be 640x480.
+ * The shrink parameter is ignored. Clip will always obey width and height parameters.
 
 ColorBars
 
