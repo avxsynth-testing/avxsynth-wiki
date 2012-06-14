@@ -250,7 +250,7 @@ Levels
 
 RGBAdjust
 
- * analyze=true parameter not working
+ * analyze=true parameter only works on RGB24. It produces corrupted text on RGB32.
 
 Tweak
 
