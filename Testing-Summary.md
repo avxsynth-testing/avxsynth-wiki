@@ -141,7 +141,7 @@ ColorYUV
  * opt=coring working
  * autowhite, autogain working
  * showYUV working
- * analyze *not* working
+ * analyze *not* working: Text rendering is distorted and upside down.
 
 ## Combine
 
