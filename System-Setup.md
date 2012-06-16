@@ -6,7 +6,7 @@ Step-by-step guide to setting-up an Ubuntu system for AvxSynth
 
 ##Install Dependencies
 
-  1. **Build Tools**  `sudo apt-get install build-essential checkinstall git yasm`
+  1. **Build Tools**  `sudo apt-get install build-essential checkinstall git pkg-config yasm`
   1. **MPlayer** `sudo apt-get install  mplayer`
   1. **Log4CPP** `sudo apt-get install liblog4cpp5-dev liblog4cpp5`
   1. **Cairo** `sudo apt-get install libcairo2-dev`
