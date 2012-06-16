@@ -18,12 +18,12 @@ Step-by-step guide to setting-up an Ubuntu system for AvxSynth
 Alternatively to installing ffms and ffmpeg from repository, you may build them as follows:
 
 ##LibAV
- 1. Get source code of Libav 0.8.1 (http://libav.org/releases/libav-0.8.1.tar.xz)
+ 1. Get source code of Libav 0.8.2 (http://libav.org/releases/libav-0.8.2.tar.xz)
  1. Compile and install
 
         ./configure --enable-gpl --enable-nonfree --enable-version3 --enable-shared --enable-postproc
         make
-        sudo checkinstall --pkgname=ffmpeg --pkgversion="0.8.1" --backup=no --deldoc=yes --fstrans=no --default
+        sudo checkinstall --pkgname=ffmpeg --pkgversion="0.8.2" --backup=no --deldoc=yes --fstrans=no --default
 
 (The --enable-postproc option must be set, otherwise the ffms2 plugin won't build)
 
