@@ -6,14 +6,16 @@ Step-by-step guide to setting-up an Ubuntu system for AvxSynth
 
 ##Install Dependencies
 
-  1. **Build Tools**  `sudo apt-get install build-essential checkinstall git pkg-config yasm`
+  1. **Build Tools**  `sudo apt-get install build-essential checkinstall git pkg-config yasm autoconf automake libtool`
   1. **MPlayer** `sudo apt-get install  mplayer`
   1. **Log4CPP** `sudo apt-get install liblog4cpp5-dev liblog4cpp5`
   1. **Cairo** `sudo apt-get install libcairo2-dev`
   1. **Pango** `sudo apt-get install libpango1.0-dev`
   1. **LibJPEG** `sudo apt-get install libjpeg-dev` (required to build the frame capture plugin)
-  1. **QT** `sudo apt-get -y install libqt4-dev libqt4-designer libqt4-gui`(required if you want to build the GUI app AvxEdit).
+  1. **QT** `sudo apt-get -y install libqt4-dev`(required if you want to build the GUI app AvxEdit).
   1. **ffms2** `sudo apt-get install libffms2-dev libavcodec-dev libavformat-dev libavutil-dev libpostproc-dev libswscale-dev` (required to build the ffms2 plugin)
+
+NOTE: Users of Ubuntu 11.04 and 11.10 have an old, unsupported version of ffms2 in their repositories. They need to recompile ffms2 as described below.
 
 Alternatively to installing ffms and ffmpeg from repository, you may build them as follows:
 
@@ -44,13 +46,19 @@ Alternatively to installing ffms and ffmpeg from repository, you may build them 
 
          git clone git@github.com:avxsynth/avxsynth.git
 
+  1. Generate build system from autotools templates. This must be done only the first time the project is checked out.
+
+         autoreconf -i
+
   1. In avxsynth root directory (to see other options, call ./configure --help)
 
          ./configure && make
 
+  Note: If you would like silent rules (less verbose output), either use "./configure --enable-silent-rules" or "make V=0"
+
   1. To install
 
-         make install
+         sudo make install
 
   1. Alternatively, you can compile and debug using KDevelop. Click [here](https://github.com/avxsynth/avxsynth/wiki/Using-KDevelop) for instructions. Make sure you run configure before following these instructions.
 
