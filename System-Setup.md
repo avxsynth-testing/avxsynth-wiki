@@ -17,20 +17,23 @@ Step-by-step guide to setting-up an Ubuntu system for AvxSynth
 
 NOTE: Users of Ubuntu 11.04 and 11.10 have an old, unsupported version of ffms2 in their repositories. They need to recompile ffms2 as described below.
 
-Alternatively to installing ffms and ffmpeg from repository, you may build them as follows:
+Alternatively to installing ffms2 and ffmpeg from repository, you may build them as follows:
 
-##LibAV
- 1. Get source code of Libav 0.8.2 (http://libav.org/releases/libav-0.8.2.tar.xz)
+##ffmpeg
+ 1. Get source code of ffmpeg 0.11.1 (http://ffmpeg.org/releases/ffmpeg-0.11.1.tar.bz2)
  1. Compile and install
 
         ./configure --enable-gpl --enable-nonfree --enable-version3 --enable-shared --enable-postproc
         make
-        sudo checkinstall --pkgname=ffmpeg --pkgversion="0.8.2" --backup=no --deldoc=yes --fstrans=no --default
+        sudo checkinstall --pkgname=ffmpeg --pkgversion="0.11.1" --backup=no --deldoc=yes --fstrans=no --default
 
 (The --enable-postproc option must be set, otherwise the ffms2 plugin won't build)
 
+Note: libav (http://libav.org) 0.8 series is also compatible.
+
 ##FFMPEGSource
  1. Get source code of FFMS-2.17 (http://code.google.com/p/ffmpegsource/downloads/list?can=1&q=&colspec=Filename+Summary+Uploaded+ReleaseDate+Size+DownloadCount)
+ 1. Open "configure" in a text editor and replace all occurrences of "avcodec_init();" with "avcodec_register_all();"
  1. Compile and install
 
         ./configure --enable-shared
