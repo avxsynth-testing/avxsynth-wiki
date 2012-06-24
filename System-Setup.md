@@ -32,7 +32,7 @@ Alternatively to installing ffms2 and ffmpeg from repository, you may build them
 Note: libav (http://libav.org) 0.8 series is also compatible.
 
 ##FFMPEGSource
- 1. Get source code of FFMS-2.17 (http://code.google.com/p/ffmpegsource/downloads/list?can=1&q=&colspec=Filename+Summary+Uploaded+ReleaseDate+Size+DownloadCount)
+ 1. Get source code of FFMS-2.17 (http://code.google.com/p/ffmpegsource/downloads/detail?name=ffms-2.17-src.tar.bz2)
  1. Open "configure" in a text editor and replace all occurrences of "avcodec_init();" with "avcodec_register_all();"
  1. Compile and install
 
