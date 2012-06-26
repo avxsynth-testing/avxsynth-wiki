@@ -12,7 +12,7 @@ Step-by-step guide to setting-up an Ubuntu system for AvxSynth
   1. **Cairo** `sudo apt-get install libcairo2-dev`
   1. **Pango** `sudo apt-get install libpango1.0-dev`
   1. **LibJPEG** `sudo apt-get install libjpeg-dev` (required to build the frame capture plugin)
-  1. **QT** `sudo apt-get -y install libqt4-dev`(required if you want to build the GUI app AvxEdit).
+  1. **QT** `sudo apt-get install libqt4-dev`(required if you want to build the GUI app AvxEdit).
   1. **ffms2** `sudo apt-get install libffms2-dev libavcodec-dev libavformat-dev libavutil-dev libpostproc-dev libswscale-dev` (required to build the ffms2 plugin)
 
 NOTE: Users of Ubuntu 11.04 and 11.10 have an old, unsupported version of ffms2 in their repositories. They need to recompile ffms2 as described below.
