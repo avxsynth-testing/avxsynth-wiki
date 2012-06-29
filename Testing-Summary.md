@@ -8,7 +8,6 @@ AVXSynth is experimental software, and much of its code has not been tested for 
 
  * Some functions that depend on Windows-specific functionality (e.g. AVISource, DirectShowSource) have not been ported.
  * Assembly code has not been ported. This may result in different output from Windows.
- * There are currently issues with getting reliable audio output.
 
 # Tested Functions
 
@@ -250,7 +249,7 @@ Levels
 
 RGBAdjust
 
- * analyze=true parameter only works on RGB24. It produces corrupted text on RGB32.
+ * Working
 
 Tweak
 
@@ -300,7 +299,7 @@ BlankClip / Blackness
 
 MessageClip
 
- * The shrink parameter is ignored. Clip will always obey width and height parameters.
+ * Working
 
 ColorBars
 
