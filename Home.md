@@ -24,10 +24,6 @@ The AvxSynth toolkit includes a frame server application that delivers decoded f
 
 Click [here](http://www.youtube.com/watch?v=DdaQeMcE0UM&context=C49774bdADvjVQa1PpcFPjEU87afkCgg4WN_KrxYQ2lYo_e_FWKPI=) to see a short video of AvxSynth in action. This video demonstrates the ffmpeg source, ffmpeg scaling, ShowSMPTE, and AvxSubtitle, a new filter that does caption burn-in.
 
-## Error Handling
-
-The AvxSynth error handling model is discussed [here](https://github.com/avxsynth/avxsynth/wiki/Error-Handling).
-
 ## Discuss
 
 Doom9 discussion is [here](http://forum.doom9.org/showthread.php?t=164386).
