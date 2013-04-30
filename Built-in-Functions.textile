@@ -11,7 +11,7 @@ h1. Audio
 |<. MixAudio|<. Yes |<. Yes  |<.  |
 |<. ResampleAudio|<. Yes |<. Yes  |<.  |
 |<. ConvertToMono|<. Yes |<. Yes  |<.  |
-|<. EnsureVBRMP3Sync|<. Yes |<. No  |<.  |
+|<. EnsureVBRMP3Sync|<. Yes |<. No  |<. Not tested as simultaneous A/V is not supported |
 |<. MergeChannels|<. Yes |<. Yes  |<.  |
 |<. MonoToStereo|<. Yes |<. Yes  |<.  |
 |<. GetLeftChannel|<. Yes |<. Yes  |<.  |
@@ -31,86 +31,86 @@ h1. Audio
 h1. Cache
 
 {background:#ddd}. |_. Function |_. Ported |_. Tested |_. Notes |
-|<. Cache|<. Yes |<.  |<.  |
-|<. InternalCache|<. Yes |<.  |<.  |
+|<. Cache|<. Yes |<. Not testable |<. Not intended for end-users |
+|<. InternalCache|<. Yes |<. Not testable |<. Not intended for end-users |
 
 h1. Core
 
 {background:#ddd}. |_. Function |_. Ported |_. Tested |_. Notes |
-|<. AlignPlanar |<. Yes |<.  |<.  |
-|<. Compare|<. Yes |<.  |<.  |
+|<. AlignPlanar |<. Yes |<. Not testable |<. API function. Not intended for end-users. |
+|<. Compare|<. Yes |<. Yes |<. Limited functionality. All clips are converted to RGB24 internally. |
 |<. ShowFrameNumber|<. Yes |<.  |<.  |
 |<. ShowSMPTE|<. Yes |<.  |<. |
 |<. ShowTime|<. Yes |<.  |<.  |
-|<. Info|<. Yes |<.  |<.  |
+|<. Info|<. Yes |<. Yes |<.  |
 |<. Subtitle|<. Yes |<.  |<.  |
 
 h1. Convert
 
 {background:#ddd}. |_. Function |_. Ported |_. Tested |_. Notes |
-|<. ConvertToRGB |<.  Yes |<.  |<.  MMX and SSE not ported |
-|<. ConvertToRGB24 |<.  Yes |<.  |<.  MMX and SSE not ported |
-|<. ConvertToRGB32 |<.  Yes |<.  |<.  MMX and SSE not ported |
-|<. ConvertToYV12|<.  Yes |<.  |<.  MMX and SSE not ported |
-|<. ConvertToYUY2|<.  Yes |<.  |<.  MMX and SSE not ported |
-|<. ConvertBackToYUY2|<.  Yes |<.  |<.  MMX and SSE not ported |
+|<. ConvertToRGB |<.  Yes |<. Some functionalities |<.  MMX and SSE not ported. PC levels and Rec. 709 not working. |
+|<. ConvertToRGB24 |<.  Yes |<. Some functionalities |<.  MMX and SSE not ported. PC levels and Rec. 709 not working. |
+|<. ConvertToRGB32 |<.  Yes |<. Some functionalities |<.  MMX and SSE not ported. PC levels and Rec. 709 not working. |
+|<. ConvertToYV12|<.  Yes |<. Yes |<.  MMX and SSE not ported |
+|<. ConvertToYUY2|<.  Yes |<. Yes |<.  MMX and SSE not ported |
+|<. ConvertBackToYUY2|<.  Yes |<. Not necessary |<.  MMX and SSE not ported. Not necessary as the chroma shift bug in mainline Avisynth has been fixed. |
 
 h1. Color
 
 {background:#ddd}. |_. Function |_. Ported |_. Tested |_. Notes |
-|<. ColorYUV |<. Yes |<. |<. |
+|<. ColorYUV |<. Yes |<. Some functionalities |<. Analyze not working. |
 
 h1. Combine
 
 {background:#ddd}. |_. Function |_. Ported |_. Tested |_. Notes |
-|<. StackVertical|<.  Yes |<.  |<.  |
-|<. StackHorizontal|<.  Yes |<.  |<.  |
-|<. ShowFiveVersions|<.  Yes |<.  |<.  |
-|<. Animate|<.  Yes |<.  |<.  |
-|<. ApplyRange|<.  Yes |<.  |<.  |
+|<. StackVertical|<.  Yes |<. Yes |<.  |
+|<. StackHorizontal|<.  Yes |<. Yes |<.  |
+|<. ShowFiveVersions|<.  Yes |<. Yes |<.  |
+|<. Animate|<.  Yes |<. Yes |<.  |
+|<. ApplyRange|<.  Yes |<. Yes |<.  |
 
 h1. Conditional
 
 {background:#ddd}. |_. Function |_. Ported |_. Tested |_. Notes |
-|<. ConditionalFilter|<.  Yes |<.  |<.  |
-|<. ScriptClip|<.  Yes |<.  |<.  |
-|<. ConditionalReader|<.  Yes |<.  |<.  |
-|<. WriteFile|<.  Yes |<.  |<.  |
-|<. WriteFileIf|<.  Yes |<.  |<.  |
-|<. WriteFileStart|<.  Yes |<.  |<.  |
-|<. WriteFileEnd|<.  Yes |<.  |<.  |
+|<. ConditionalFilter|<. Yes |<. Yes |<.  |
+|<. ScriptClip|<. Yes |<. Yes |<.  |
+|<. ConditionalReader|<. Yes |<. Yes |<.  |
+|<. WriteFile|<. Yes |<. Yes |<.  |
+|<. WriteFileIf|<. Yes |<. Yes |<.  |
+|<. WriteFileStart|<. Yes |<. Yes |<.  |
+|<. WriteFileEnd|<. Yes |<. Yes |<.  |
 
 h1. Convolution
 
 {background:#ddd}. |_. Function |_. Ported |_. Tested |_. Notes |
-|<. Convolution|<. Yes |<. |<. |
+|<. Convolution|<. Yes |<. Yes |<. |
 
 h1. Debug
 
 {background:#ddd}. |_. Function |_. Ported |_. Tested |_. Notes |
-|<. Null|<.  Yes |<.  |<.  |
-|<. PlanarLegacyAlignment|<.  Yes |<.  |<.  |
-|<. ErrorHandlingExternal|<.  Yes |<.  |<. New command added by AvxSynth |
+|<. Null|<.  Yes |<. Not testable |<.  |
+|<. PlanarLegacyAlignment|<.  Yes |<. Not testable |<. Requires external plugins to test |
+|<. ErrorHandlingExternal|<.  Yes |<. Yes |<. New command added by AvxSynth |
 
 h1. Edit
 
 {background:#ddd}. |_. Function |_. Ported |_. Tested |_. Notes |
-|<. Trim|<.  Yes |<.  |<.  |
-|<. FreezeFrame|<.  Yes |<.  |<.  |
-|<. DeleteFrame|<.  Yes |<.  |<.  |
-|<. DuplicateFrame|<.  Yes |<.  |<.  |
-|<. UnalignedSplice|<.  Yes |<.  |<.  |
-|<. AlignedSplice|<.  Yes |<.  |<.  |
-|<. AudioDub|<.  Yes |<.  |<.  |
-|<. AudioDubEx|<.  Yes |<.  |<.  |
-|<. Dissolve|<.  Yes |<.  |<.  MMX and SSE not ported |
-|<. FadeOut0|<.  Yes |<.  |<.  MMX and SSE not ported |
-|<. FadeOut|<.  Yes |<.  |<.  MMX and SSE not ported |
-|<. FadeOut2|<.  Yes |<.  |<.  MMX and SSE not ported |
-|<. FadeIn|<.  Yes |<.  |<.  MMX and SSE not ported |
-|<. FadeIn2|<.  Yes |<.  |<.  MMX and SSE not ported |
-|<. FadeIO|<.  Yes |<.  |<.  MMX and SSE not ported |
-|<. FadeIO2|<.  Yes |<.  |<.  MMX and SSE not ported |
+|<. Trim|<.  Yes |<. Yes |<.  |
+|<. FreezeFrame|<.  Yes |<. Yes |<.  |
+|<. DeleteFrame|<.  Yes |<. Yes |<.  |
+|<. DuplicateFrame|<.  Yes |<. Yes |<.  |
+|<. UnalignedSplice|<.  Yes |<. Yes |<.  |
+|<. AlignedSplice|<.  Yes |<. Yes |<.  |
+|<. AudioDub|<.  Yes |<. Yes |<.  |
+|<. AudioDubEx|<.  Yes |<. Yes |<.  |
+|<. Dissolve|<.  Yes |<. Yes |<.  MMX and SSE not ported |
+|<. FadeOut0|<.  Yes |<. Yes |<.  MMX and SSE not ported |
+|<. FadeOut|<.  Yes |<. Yes |<.  MMX and SSE not ported |
+|<. FadeOut2|<.  Yes |<. Yes |<.  MMX and SSE not ported |
+|<. FadeIn|<.  Yes |<. Yes |<.  MMX and SSE not ported |
+|<. FadeIn2|<.  Yes |<. Yes |<.  MMX and SSE not ported |
+|<. FadeIO|<.  Yes |<. Yes |<.  MMX and SSE not ported |
+|<. FadeIO2|<.  Yes |<. Yes |<.  MMX and SSE not ported |
 |<. Loop|<.  Yes |<.  |<.  MMX and SSE not ported |
 
 h1. Field
