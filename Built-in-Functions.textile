@@ -39,11 +39,11 @@ h1. Core
 {background:#ddd}. |_. Function |_. Ported |_. Tested |_. Notes |
 |<. AlignPlanar |<. Yes |<. Not testable |<. API function. Not intended for end-users. |
 |<. Compare|<. Yes |<. Yes |<. Limited functionality. All clips are converted to RGB24 internally. |
-|<. ShowFrameNumber|<. Yes |<.  |<.  |
-|<. ShowSMPTE|<. Yes |<.  |<. |
-|<. ShowTime|<. Yes |<.  |<.  |
+|<. ShowFrameNumber|<. Yes |<. Some functionalities |<. [ShowFrameNumber] scroll parameter not working. Default text positioning is different from Windows for ShowX functions. align, spc, font_width, font_angle parameters, interlaced parameters are ignored. |
+|<. ShowSMPTE|<. Yes |<. Some functionalities |<. Default text positioning is different from Windows for ShowX functions. align, spc, font_width, font_angle parameters, interlaced parameters are ignored. |
+|<. ShowTime|<. Yes |<. Some functionalities |<. Default text positioning is different from Windows for ShowX functions. align, spc, font_width, font_angle parameters, interlaced parameters are ignored. |
 |<. Info|<. Yes |<. Yes |<.  |
-|<. Subtitle|<. Yes |<.  |<.  |
+|<. Subtitle|<. Yes |<. Some functionalities |<. Default text positioning is different from Windows for ShowX functions. align, spc, font_width, font_angle parameters, interlaced parameters are ignored. |
 
 h1. Convert
 
@@ -177,157 +177,157 @@ h1. Layer
 h1. Levels
 
 {background:#ddd}. |_. Function |_. Ported |_. Tested |_. Notes |
-|<. Levels|<.  Yes |<.  |<.  |
-|<. RGBAdjust|<.  Yes |<.  |<.  |
-|<. Tweak|<.  Yes |<.  |<.  |
-|<. Limiter|<.  Yes |<.  |<.  |
+|<. Levels|<.  Yes |<. Yes |<.  |
+|<. RGBAdjust|<.  Yes |<. Yes |<.  |
+|<. Tweak|<.  Yes |<. Yes |<.  |
+|<. Limiter|<.  Yes |<. Yes |<.  |
 
 h1. Merge
 
 {background:#ddd}. |_. Function |_. Ported |_. Tested |_. Notes |
-|<. Merge|<.  Yes |<.  |<.  MMX and SSE not ported |
-|<. MergeChroma|<.  Yes |<.  |<.  MMX and SSE not ported |
-|<. MergeLuma|<.  Yes |<.  |<.  MMX and SSE not ported |
+|<. Merge|<.  Yes |<. Yes |<.  MMX and SSE not ported |
+|<. MergeChroma|<.  Yes |<. Yes |<.  MMX and SSE not ported |
+|<. MergeLuma|<.  Yes |<. Yes |<.  MMX and SSE not ported |
 
 h1. Misc
 
 {background:#ddd}. |_. Function |_. Ported |_. Tested |_. Notes |
-|<. FixLuminance|<.  Yes |<.  |<.  |
-|<. FixBrokenChromaUpsampling|<.  Yes |<.  |<.  |
-|<. PeculiarBlend|<.  Yes |<.  |<.  |
+|<. FixLuminance|<.  Yes |<. No |<. Obsoleted |
+|<. FixBrokenChromaUpsampling|<.  Yes |<. No |<. Obsoleted |
+|<. PeculiarBlend|<.  Yes |<. No |<. Obsoleted |
 
 h1. Planeswap
 
 {background:#ddd}. |_. Function |_. Ported |_. Tested |_. Notes |
-|<. SwapUV|<.  Yes |<.  |<.  MMX and SSE not ported |
-|<. UToY|<.  Yes |<.  |<.  MMX and SSE not ported |
-|<. VToY|<.  Yes |<.  |<.  MMX and SSE not ported |
-|<. YToUV|<.  Yes |<.  |<.  MMX and SSE not ported |
+|<. SwapUV|<.  Yes |<. Yes |<.  MMX and SSE not ported |
+|<. UToY|<.  Yes |<. Yes |<.  MMX and SSE not ported |
+|<. VToY|<.  Yes |<. Yes |<.  MMX and SSE not ported |
+|<. YToUV|<.  Yes |<. Yes |<.  MMX and SSE not ported |
 
 h1. Resample
 
 {background:#ddd}. |_. Function |_. Ported |_. Tested |_. Notes |
-|<. PointResize|<.  No, but invokes SWScale external plugin |<.  |<.  Need SWScale |
-|<. BilinearResize|<.  No, but invokes SWScale external plugin |<.  |<.  Need SWScale |
-|<. BicubicResize|<.  No, but invokes SWScale external plugin |<.  |<.  Need SWScale |
-|<. LanczosResize|<.  No, but invokes SWScale external plugin |<.  |<.  Need SWScale |
-|<. Lanczos4Resize|<.  No, but invokes SWScale external plugin |<.  |<.  Need SWScale |
-|<. BlackmanResize|<.  No, but invokes SWScale external plugin |<.  |<.  Need SWScale |
-|<. Spline16Resize|<.  No, but invokes SWScale external plugin |<.  |<.  Need SWScale |
-|<. Spline36Resize|<.  No, but invokes SWScale external plugin |<.  |<.  Need SWScale |
-|<. Spline64Resize|<.  No, but invokes SWScale external plugin |<.  |<.  Need SWScale |
-|<. GaussResize|<.  No, but invokes SWScale external plugin |<.  |<.  Need SWScale |
+|<. PointResize|<.  No, but invokes SWScale external plugin |<. Yes |<.  Need SWScale |
+|<. BilinearResize|<.  No, but invokes SWScale external plugin |<. Yes |<.  Need SWScale |
+|<. BicubicResize|<.  No, but invokes SWScale external plugin |<. Yes |<.  Need SWScale |
+|<. LanczosResize|<.  No, but invokes SWScale external plugin |<. Yes |<.  Need SWScale |
+|<. Lanczos4Resize|<.  No, but invokes SWScale external plugin |<. Yes |<.  Need SWScale. Mapped to Lanczos algorithm in sws. |
+|<. BlackmanResize|<.  No, but invokes SWScale external plugin |<. Yes |<.  Need SWScale. Mapped to Lanczos algorithm in sws. |
+|<. Spline16Resize|<.  No, but invokes SWScale external plugin |<. Yes |<.  Need SWScale. Mapped to Spline algorithm in sws. |
+|<. Spline36Resize|<.  No, but invokes SWScale external plugin |<. Yes |<.  Need SWScale. Mapped to Spline algorithm in sws. |
+|<. Spline64Resize|<.  No, but invokes SWScale external plugin |<. Yes |<.  Need SWScale. Mapped to Spline algorithm in sws. |
+|<. GaussResize|<.  No, but invokes SWScale external plugin |<. Yes |<.  Need SWScale |
 
 h1. Resize
 
 {background:#ddd}. |_. Function |_. Ported |_. Tested |_. Notes |
-|<. VerticalReduceBy2|<.  Yes |<.  |<.  MMX and SSE not ported |
-|<. HorizontalReduceBy2|<.  Yes |<.  |<.  MMX and SSE not ported |
-|<. ReduceBy2|<.  Yes |<.  |<.  MMX and SSE not ported |
+|<. VerticalReduceBy2|<.  Yes |<. Partial |<.  MMX and SSE not ported. The top line is handled differently from mainline Avisynth (see issue #22). |
+|<. HorizontalReduceBy2|<.  Yes |<. Yes |<.  MMX and SSE not ported |
+|<. ReduceBy2|<.  Yes |<. Partial |<.  MMX and SSE not ported. The top line is handled differently from mainline Avisynth (see issue #22). |
 
 h1. Script
 
 {background:#ddd}. |_. Function |_. Ported |_. Tested |_. Notes |
-|<. muldiv|<.  Yes |<.  |<.  |
-|<. floor|<.  Yes |<.  |<.  |
-|<. ceil|<.  Yes |<.  |<.  |
-|<. round|<.  Yes |<.  |<.  |
-|<. sin|<.  Yes |<.  |<.  |
-|<. cos|<.  Yes |<.  |<.  |
-|<. pi|<.  Yes |<.  |<.  |
-|<. log|<.  Yes |<.  |<.  |
-|<. exp|<.  Yes |<.  |<.  |
-|<. pow|<.  Yes |<.  |<.  |
-|<. sqrt|<.  Yes |<.  |<.  |
-|<. abs|<.  Yes |<.  |<.  |
-|<. abs (f)|<.  Yes |<.  |<.  |
-|<. sign|<.  Yes |<.  |<.  |
-|<. lcase|<.  Yes |<.  |<.  |
-|<. ucase|<.  Yes |<.  |<.  |
-|<. strlen|<.  Yes |<.  |<.  |
-|<. revstr|<.  Yes |<.  |<.  |
-|<. leftstr|<.  Yes |<.  |<.  |
-|<. midstr|<.  Yes |<.  |<.  |
-|<. rightstr|<.  Yes |<.  |<.  |
-|<. rand|<.  Yes |<.  |<.  |
-|<. Select|<.  Yes |<.  |<.  |
-|<. nop|<.  Yes |<.  |<.  |
-|<. width|<.  Yes |<.  |<.  |
-|<. height|<.  Yes |<.  |<.  |
-|<. framecount|<.  Yes |<.  |<.  |
-|<. framerate|<.  Yes |<.  |<.  |
-|<. frameratenumerator|<.  Yes |<.  |<.  |
-|<. frameratedenominator|<.  Yes |<.  |<.  |
-|<. audiorate|<.  Yes |<.  |<.  |
-|<. audiolength|<.  Yes |<.  |<.  |
-|<. audiolengthf|<.  Yes |<.  |<.  |
-|<. audiochannels|<.  Yes |<.  |<.  |
-|<. audiobits|<.  Yes |<.  |<.  |
-|<. IsAudioFloat|<.  Yes |<.  |<.  |
-|<. IsAudioInt|<.  Yes |<.  |<.  |
-|<. IsRGB|<.  Yes |<.  |<.  |
-|<. IsYUY2|<.  Yes |<.  |<.  |
-|<. IsYUV|<.  Yes |<.  |<.  |
-|<. IsYV12|<.  Yes |<.  |<.  |
-|<. IsPlanar|<.  Yes |<.  |<.  |
-|<. IsInterleaved|<.  Yes |<.  |<.  |
-|<. IsRGB24|<.  Yes |<.  |<.  |
-|<. IsRGB32|<.  Yes |<.  |<.  |
-|<. IsFieldBased|<.  Yes |<.  |<.  |
-|<. IsFrameBased|<.  Yes |<.  |<.  |
-|<. GetParity|<.  Yes |<.  |<.  |
-|<. String|<.  Yes |<.  |<.  |
-|<. IsBool|<.  Yes |<.  |<.  |
-|<. IsInt|<.  Yes |<.  |<.  |
-|<. IsString|<.  Yes |<.  |<.  |
-|<. IsClip|<.  Yes |<.  |<.  |
-|<. Defined|<.  Yes |<.  |<.  |
-|<. Default|<.  Yes |<.  |<.  |
-|<. Eval|<.  Yes |<.  |<.  |
-|<. Apply|<.  Yes |<.  |<.  |
-|<. Import|<.  Yes |<.  |<.  |
-|<. Assert|<.  Yes |<.  |<.  |
-|<. Assert (s)|<.  Yes |<.  |<.  |
-|<. SetMemoryMax|<.  Yes |<.  |<.  |
-|<. SetWorkingDir|<.  Yes |<.  |<.  |
-|<. Chr|<.  Yes |<.  |<.  |
-|<. Time|<.  Yes |<.  |<.  |
-|<. Spline|<.  Yes |<.  |<.  |
-|<. int|<.  Yes |<.  |<.  |
-|<. frac|<.  Yes |<.  |<.  |
-|<. float|<.  Yes |<.  |<.  |
-|<. value|<.  Yes |<.  |<.  |
-|<. hexvalue|<.  Yes |<.  |<.  |
-|<. VersionNumber|<.  Yes |<.  |<.  |
-|<. VersionString|<.  Yes |<.  |<.  |
-|<. HasVideo|<.  Yes |<.  |<.  |
-|<. HasAudio|<.  Yes |<.  |<.  |
-|<. Min|<.  Yes |<.  |<.  |
-|<. Max|<.  Yes |<.  |<.  |
+|<. muldiv|<.  Yes |<. No |<.  |
+|<. floor|<.  Yes |<. No |<.  |
+|<. ceil|<.  Yes |<. No |<.  |
+|<. round|<.  Yes |<. No |<.  |
+|<. sin|<.  Yes |<. No |<.  |
+|<. cos|<.  Yes |<. No |<.  |
+|<. pi|<.  Yes |<. No |<.  |
+|<. log|<.  Yes |<. No |<.  |
+|<. exp|<.  Yes |<. No |<.  |
+|<. pow|<.  Yes |<. No |<.  |
+|<. sqrt|<.  Yes |<. No |<.  |
+|<. abs|<.  Yes |<. No |<.  |
+|<. abs (f)|<.  Yes |<. No |<.  |
+|<. sign|<.  Yes |<. No |<.  |
+|<. lcase|<.  Yes |<. No |<.  |
+|<. ucase|<.  Yes |<. No |<.  |
+|<. strlen|<.  Yes |<. No |<.  |
+|<. revstr|<.  Yes |<. No |<.  |
+|<. leftstr|<.  Yes |<. No |<.  |
+|<. midstr|<.  Yes |<. No |<.  |
+|<. rightstr|<.  Yes |<. No |<.  |
+|<. rand|<.  Yes |<. No |<.  |
+|<. Select|<.  Yes |<. No |<.  |
+|<. nop|<.  Yes |<. No |<.  |
+|<. width|<.  Yes |<. No |<.  |
+|<. height|<.  Yes |<. No |<.  |
+|<. framecount|<.  Yes |<. No |<.  |
+|<. framerate|<.  Yes |<. No |<.  |
+|<. frameratenumerator|<.  Yes |<. No |<.  |
+|<. frameratedenominator|<.  Yes |<. No |<.  |
+|<. audiorate|<.  Yes |<. No |<.  |
+|<. audiolength|<.  Yes |<. No |<.  |
+|<. audiolengthf|<.  Yes |<. No |<.  |
+|<. audiochannels|<.  Yes |<. No |<.  |
+|<. audiobits|<.  Yes |<. No |<.  |
+|<. IsAudioFloat|<.  Yes |<. No |<.  |
+|<. IsAudioInt|<.  Yes |<. No |<.  |
+|<. IsRGB|<.  Yes |<. No |<.  |
+|<. IsYUY2|<.  Yes |<. No |<.  |
+|<. IsYUV|<.  Yes |<. No |<.  |
+|<. IsYV12|<.  Yes |<. No |<.  |
+|<. IsPlanar|<.  Yes |<. No |<.  |
+|<. IsInterleaved|<.  Yes |<. No |<.  |
+|<. IsRGB24|<.  Yes |<. No |<.  |
+|<. IsRGB32|<.  Yes |<. No |<.  |
+|<. IsFieldBased|<.  Yes |<. No |<.  |
+|<. IsFrameBased|<.  Yes |<. No |<.  |
+|<. GetParity|<.  Yes |<. No |<.  |
+|<. String|<.  Yes |<. No |<.  |
+|<. IsBool|<.  Yes |<. No |<.  |
+|<. IsInt|<.  Yes |<. No |<.  |
+|<. IsString|<.  Yes |<. No |<.  |
+|<. IsClip|<.  Yes |<. No |<.  |
+|<. Defined|<.  Yes |<. No |<.  |
+|<. Default|<.  Yes |<. No |<.  |
+|<. Eval|<.  Yes |<. No |<.  |
+|<. Apply|<.  Yes |<. No |<.  |
+|<. Import|<.  Yes |<. No |<.  |
+|<. Assert|<.  Yes |<. No |<.  |
+|<. Assert (s)|<.  Yes |<. No |<.  |
+|<. SetMemoryMax|<.  Yes |<. No |<.  |
+|<. SetWorkingDir|<.  Yes |<. No |<.  |
+|<. Chr|<.  Yes |<. No |<.  |
+|<. Time|<.  Yes |<. No |<.  |
+|<. Spline|<.  Yes |<. No |<.  |
+|<. int|<.  Yes |<. No |<.  |
+|<. frac|<.  Yes |<. No |<.  |
+|<. float|<.  Yes |<. No |<.  |
+|<. value|<.  Yes |<. No |<.  |
+|<. hexvalue|<.  Yes |<. No |<.  |
+|<. VersionNumber|<.  Yes |<. No |<.  |
+|<. VersionString|<.  Yes |<. No |<.  |
+|<. HasVideo|<.  Yes |<. No |<.  |
+|<. HasAudio|<.  Yes |<. No |<.  |
+|<. Min|<.  Yes |<. No |<.  |
+|<. Max|<.  Yes |<. No |<.  |
 
 h1. Source
 
 {background:#ddd}. |_. Function |_. Ported |_. Tested |_. Notes |
-|<. BlankClip|<.  Yes |<.  |<.  |
-|<. Blackness|<.  Yes |<.  |<.  |
-|<. MessageClip|<.  Yes |<.  |<.  |
-|<. ColorBars|<.  Yes |<.  |<.  |
-|<. Tone|<.  Yes |<.  |<.  |
-|<. Version|<.  Yes |<.  |<.  |
+|<. BlankClip|<.  Yes |<. Yes |<.  |
+|<. Blackness|<.  Yes |<. Yes |<.  |
+|<. MessageClip|<.  Yes |<. Yes |<.  |
+|<. ColorBars|<.  Yes |<. Yes |<.  |
+|<. Tone|<.  Yes |<. Yes |<.  |
+|<. Version|<.  Yes |<. Yes |<. Dimensions and text have been updated to match new project. |
 
 h1. Transform
 
 {background:#ddd}. |_. Function |_. Ported |_. Tested |_. Notes |
-|<. FlipVertical|<.  Yes |<.  |<.  |
-|<. FlipHorizontal|<.  Yes |<.  |<.  |
-|<. Crop|<.  Yes |<.  |<.  |
-|<. CropBottom|<.  Yes |<.  |<.  |
-|<. AddBorders|<.  Yes |<.  |<.  |
-|<. Letterbox|<.  Yes |<.  |<.  |
+|<. FlipVertical|<.  Yes |<. Yes |<.  |
+|<. FlipHorizontal|<.  Yes |<. Yes |<.  |
+|<. Crop|<.  Yes |<. Yes |<.  |
+|<. CropBottom|<.  Yes |<. Yes |<.  |
+|<. AddBorders|<.  Yes |<. Yes |<.  |
+|<. Letterbox|<.  Yes |<. Yes |<.  |
 
 h1. Turn
 
 {background:#ddd}. |_. Function |_. Ported |_. Tested |_. Notes |
-|<. TurnLeft|<.  Yes |<.  |<.  |
-|<. TurnRight|<.  Yes |<.  |<.  |
-|<. Turn180|<.  Yes |<.  |<.  |
+|<. TurnLeft|<.  Yes |<. Yes |<.  |
+|<. TurnRight|<.  Yes |<. Yes |<.  |
+|<. Turn180|<.  Yes |<. Yes |<.  |
