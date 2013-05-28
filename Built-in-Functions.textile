@@ -116,63 +116,63 @@ h1. Edit
 h1. Field
 
 {background:#ddd}. |_. Function |_. Ported |_. Tested |_. Notes |
-|<. ComplementParity|<.  Yes |<.  |<.  |
-|<. AssumeTFF|<.  Yes |<.  |<.  |
-|<. AssumeBFF|<.  Yes |<.  |<.  |
-|<. AssumeFieldBased|<.  Yes |<.  |<.  |
-|<. AssumeFrameBased|<.  Yes |<.  |<.  |
-|<. SeparateFields|<.  Yes |<.  |<.  |
-|<. Weave|<.  Yes |<.  |<.  |
-|<. DoubleWeave|<.  Yes |<.  |<.  |
-|<. Pulldown|<.  Yes |<.  |<.  |
-|<. SelectEvery|<.  Yes |<.  |<.  |
-|<. SelectEven|<.  Yes |<.  |<.  |
-|<. SelectOdd|<.  Yes |<.  |<.  |
-|<. Interleave|<.  Yes |<.  |<.  |
-|<. SwapFields|<.  Yes |<.  |<.  |
-|<. Bob|<.  No |<.  |<.  |
-|<. SelectRangeEvery|<.  Yes |<.  |<.  |
+|<. ComplementParity|<.  Yes |<. Yes |<.  |
+|<. AssumeTFF|<.  Yes |<. Yes |<.  |
+|<. AssumeBFF|<.  Yes |<. Yes |<.  |
+|<. AssumeFieldBased|<.  Yes |<. Yes |<.  |
+|<. AssumeFrameBased|<.  Yes |<. Yes |<.  |
+|<. SeparateFields|<.  Yes |<. Yes |<.  |
+|<. Weave|<.  Yes |<. Yes |<.  |
+|<. DoubleWeave|<.  Yes |<. Yes |<.  |
+|<. Pulldown|<.  Yes |<. Yes |<.  |
+|<. SelectEvery|<.  Yes |<. Yes |<.  |
+|<. SelectEven|<.  Yes |<. Yes |<.  |
+|<. SelectOdd|<.  Yes |<. Yes |<.  |
+|<. Interleave|<.  Yes |<. Yes |<.  |
+|<. SwapFields|<.  Yes |<. Yes |<.  |
+|<. Bob|<.  No |<. No |<.  |
+|<. SelectRangeEvery|<.  Yes |<. Yes |<.  |
 
 h1. Focus
 
 {background:#ddd}. |_. Function |_. Ported |_. Tested |_. Notes |
-|<. Blur|<.  Yes |<.  |<.  MMX and SSE not ported |
-|<. Sharpen|<.  Yes |<.  |<.  MMX and SSE not ported |
-|<. TemporalSoften|<.  No |<.  |<.  |
-|<. SpatialSoften|<.  Yes |<.  |<.  |
+|<. Blur|<.  Yes |<. Yes |<.  MMX and SSE not ported |
+|<. Sharpen|<.  Yes |<. Yes |<.  MMX and SSE not ported |
+|<. TemporalSoften|<.  No |<. No |<.  |
+|<. SpatialSoften|<.  Yes |<. Yes |<.  |
 
 h1. Fps
 
 {background:#ddd}. |_. Function |_. Ported |_. Tested |_. Notes |
-|<. AssumeFPS|<.  Yes |<.  |<.  |
-|<. ChangeFPS|<.  Yes |<.  |<.  |
-|<. ConvertFPS|<.  Yes |<.  |<.  |
+|<. AssumeFPS|<.  Yes |<. Yes |<.  |
+|<. ChangeFPS|<.  Yes |<. Yes |<.  |
+|<. ConvertFPS|<.  Yes |<. Appears to be |<. Not tested, but appears to be working |
 
 h1. Grayscale
 
 {background:#ddd}. |_. Function |_. Ported |_. Tested |_. Notes |
-|<. Grayscale|<. Yes |<. |<. MMX and SSE not ported |
+|<. Grayscale|<. Yes |<. No |<. MMX and SSE not ported |
 
 h1. Histogram
 
 {background:#ddd}. |_. Function |_. Ported |_. Tested |_. Notes |
-|<. Histogram|<. Yes |<. |<. |
+|<. Histogram|<. Yes |<. Appears to be |<. Not thoroughly tested, but appears to be working |
 
 h1. Layer
 
 {background:#ddd}. |_. Function |_. Ported |_. Tested |_. Notes |
-|<. Mask|<.  No |<.  |<.  |
-|<. ColorKeyMask|<.  No |<.  |<.  |
-|<. ResetMask|<.  Yes |<.  |<.  |
-|<. Invert|<.  No |<.  |<.  |
-|<. ShowAlpha|<.  Yes |<.  |<.  |
-|<. ShowRed|<.  Yes |<.  |<.  |
-|<. ShowGreen|<.  Yes |<.  |<.  |
-|<. ShowBlue|<.  Yes |<.  |<.  |
-|<. MergeRGB|<.  Yes |<.  |<.  |
-|<. MergeARGB|<.  Yes |<.  |<.  |
-|<. Layer|<.  No |<.  |<.  |
-|<. Subtract|<.  Yes |<.  |<.  |
+|<. Mask|<.  No |<. No |<.  |
+|<. ColorKeyMask|<.  No |<. No |<.  |
+|<. ResetMask|<.  Yes |<. Yes |<.  |
+|<. Invert|<.  No |<. No |<.  |
+|<. ShowAlpha|<.  Yes |<. Yes |<.  |
+|<. ShowRed|<.  Yes |<. Yes |<.  |
+|<. ShowGreen|<.  Yes |<. Yes |<.  |
+|<. ShowBlue|<.  Yes |<. Yes |<.  |
+|<. MergeRGB|<.  Yes |<. Yes |<.  |
+|<. MergeARGB|<.  Yes |<. Yes |<.  |
+|<. Layer|<.  No |<. No |<.  |
+|<. Subtract|<.  Yes |<. Yes |<.  |
 
 h1. Levels
 
